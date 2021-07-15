@@ -12,6 +12,8 @@ import logging
 
 #Global varial
 #HOST = cg.server['host']
+logging.basicConfig(filename='odoo.log', level = logging.DEBUG, 
+    format='%(asctime)s:%(levelname)s:%(message)s')
 
 #Declare app
 app = Flask(__name__)
