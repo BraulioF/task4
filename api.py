@@ -123,7 +123,7 @@ def createproduct():
 
     data = request.get_json()
     product = data["create_prod"]
-    checkprod = rs_product.ProductList.get(product)
+    checkprod = rs_product_template.ProductList.get(product)
     if(len(checkprod) != 0):
         return jsonify({"Error" : "Ya existe un producto con ese defaultcode"})
     if(len(rs_product.ProductList.get_barcode(product)) != 0):
@@ -157,7 +157,7 @@ def drop_prod():
 
     data = request.get_json()
     prod = data["delete_producto"]
-    check = rs_product.ProductList.get(prod)
+    check = rs_product_template.ProductList.get(prod)
     if(len(check)== 0):
         logging.error(f'ese prod no existe {prod["default_code"]}')
         return jsonify({"Error 404": "Ese Producto no existe"})
