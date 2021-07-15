@@ -2,8 +2,9 @@ from ..auth import odoo
 
 
 class ProductCategList ():
+    
     """get list of product categ"""
-    def getCateg(data):
+    def get(data):
         """Get categ_name by categ name"""
         odoo_client = odoo.OdooClient()
         uid, models = odoo_client.logging()
