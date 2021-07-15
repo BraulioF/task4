@@ -1,21 +1,6 @@
 from ..auth import odoo
 
 
-class ProductList():
-    """get list product"""
-
-    def get_default_code(data):
-        """get product for default_code"""
-        odoo_client = odoo.OdooClient()
-        uid, models = odoo_client.logging()
-        product = data["producto"]
-        default_code = models.execute_kw(odoo_client.db, uid, odoo_client.password,
-                        'product.template', 'search_read',
-            [[['default_code', '=', product["default_code"]]]],
-            { 'fields': ['default_code'] ,'limit': 1})
-        return default_code
-
-
 class ProductCreate():
     """product create in odoo"""
 
@@ -40,16 +25,3 @@ class ProductCreate():
             }])
        
         return product_id
-
-class ProductDelete():
-    """delete product by id"""
-
-    def delete(id):
-        
-        odoo_client = odoo.OdooClient()
-        uid, models = odoo_client.logging()
-        models.execute_kw(odoo_client.db, uid, odoo_client.password, 'product.product', 'unlink', [[int(id)]])
-        check = models.execute_kw(odoo_client.db, uid, odoo_client.password,
-            'res.partner', 'search', [[['id', '=', id]]])
-        return check
- 
