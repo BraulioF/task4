@@ -41,4 +41,15 @@ class ProductCreate():
        
         return product_id
 
+class ProductDelete():
+    """delete product by id"""
+
+    def delete(id):
+        
+        odoo_client = odoo.OdooClient()
+        uid, models = odoo_client.logging()
+        models.execute_kw(odoo_client.db, uid, odoo_client.password, 'product.product', 'unlink', [[int(id)]])
+        check = models.execute_kw(odoo_client.db, uid, odoo_client.password,
+            'res.partner', 'search', [[['id', '=', id]]])
+        return check
  

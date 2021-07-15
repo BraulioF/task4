@@ -1,5 +1,5 @@
 """ views models"""
-from flask import Flask, jsonify, request
+from flask import Flask, json, jsonify, request
 from models import *
 from models import odoo
 
@@ -17,6 +17,51 @@ logging.basicConfig(filename='odoo.log', level = logging.DEBUG,
 
 #Declare app
 app = Flask(__name__)
+
+#CREATE PARTNER
+@app.route("/partner/create", methods=["POST"])
+
+def create():
+   
+    data = request.get_json()
+    cliente = data["cliente"]    
+    crear = rs_partner.ResPartnerCreate.post(cliente)
+    #y lo mando a su resource
+    return jsonify({"Creado": crear})
+
+#UPDATE PARTNER
+@app.route("/partner/update", methods=["PUT"])
+def update_partner():
+    data = request.get_json()
+    cliente = data["cliente"]
+    partners = rs_partner.ResPartnerList.get_rut(cliente)
+    if(len(partners)== 0):
+        logging.error(f'el siguiente rut no existe {cliente["rut"]}')
+        return jsonify({"Error 404": "Ese RUT no existe"})
+    else:
+        id = partners[0]['id']
+        logging.info(id)
+        rs_partner.ResPartnerUpdate.put(cliente,id)
+        return jsonify(partners)
+
+#Delete PARTNER
+@app.route("/partner/drop", methods=["DELETE"])
+
+def drop_partner():
+
+    data = request.get_json()
+    cliente = data["cliente"]
+    partners = rs_partner.ResPartnerList.get_rut(cliente)
+    if(len(partners)== 0):
+        logging.error(f'el siguiente rut no existe {cliente["rut"]}')
+        return jsonify({"Error 404": "Ese RUT no existe"})
+        
+    else:
+        id = partners[0]['id']
+        logging.info(id)
+        verificar =rs_partner.ResPartnerDelete.delete(id)
+        return jsonify({cliente["name"]:"Eliminado con exito"})
+
 
 #POST A VENTAS
 @app.route("/sale", methods=["POST"])
