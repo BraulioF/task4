@@ -21,21 +21,24 @@ app = Flask(__name__)
 #GET PARTNER
 @app.route("/partner/get", methods=["GET"])
 def get():
-   
+    logging.info(f'Vista = /partner/get')
     data = request.get_json()
+    logging.info(f'Se obtuvo {data}')
     cliente = data["cliente"]
     partners = rs_partner.ResPartnerList.get_rut(cliente)
     if(len(partners)== 0):
         logging.error(f'el siguiente rut no existe {cliente["rut"]}')
         return jsonify({"Error 404": "Ese RUT no existe"})
     else:
+        logging.info(f'Se retorno {partners}')
         return jsonify({"Encontrado": partners})
 
 #CREATE PARTNER
 @app.route("/partner/create", methods=["POST"])
 def create():
-   
+    logging.info(f'Vista = /partner/create')
     data = request.get_json()
+    logging.info(f'Se obtuvo {data}')
     cliente = data["cliente"]
     partners = rs_partner.ResPartnerList.get_rut(cliente)
     if(len(partners)!= 0):
@@ -43,13 +46,15 @@ def create():
         return jsonify({"Error": "Ese RUT ya existe"})
     else:  
         crear = rs_partner.ResPartnerCreate.post(cliente)
-    #y lo mando a su resource
+        logging.info(f'Se retorno {crear}')
         return jsonify({"Creado": crear})
 
 #UPDATE PARTNER
 @app.route("/partner/update", methods=["PUT"])
 def update_partner():
+    logging.info(f'Vista = /partner/update')
     data = request.get_json()
+    logging.info(f'Se obtuvo {data}')
     cliente = data["cliente"]
     partners = rs_partner.ResPartnerList.get_rut(cliente)
     if(len(partners)== 0):
@@ -57,15 +62,16 @@ def update_partner():
         return jsonify({"Error 404": "Ese RUT no existe"})
     else:
         id = partners[0]['id']
-        logging.info(id)
         rs_partner.ResPartnerUpdate.put(cliente,id)
+        logging.info(f'Se modifico el partner con id {id}')
         return jsonify({partners:"Modificado"})
 
 #Delete PARTNER
 @app.route("/partner/drop", methods=["DELETE"])
 def drop_partner():
-
+    logging.info(f'Vista = /partner/drop')
     data = request.get_json()
+    logging.info(f'Se obtuvo {data}')
     cliente = data["cliente"]
     partners = rs_partner.ResPartnerList.get_rut(cliente)
     if(len(partners)== 0):
@@ -74,22 +80,21 @@ def drop_partner():
         
     else:
         id = partners[0]['id']
-        logging.info(id)
-        verificar =rs_partner.ResPartnerDelete.delete(id)
+        rs_partner.ResPartnerDelete.delete(id)
+        logging.info(f'Se elimino el partner con id {id}')
         return jsonify({cliente["rut"]:"Eliminado con exito"})
 
 
 #POST A VENTAS
 @app.route("/sale", methods=["POST"])
 def sale_create():
-    #Usar el metodo ya creado donde creamos un partner
     data = request.get_json()
     dat = data["venta"]
     team = rs_team.TeamList.get_name(dat)
     if(len(team) == 0):
         valor = data['venta']
         valoresp = valor['name']
-        return "'" + valoresp +"'" + " No existe en la Base de Datos"
+        return (f'{valoresp} No existe en la Base de Datos')
     else:
         sales = data["venta"] 
         value = team[0]
@@ -228,6 +233,12 @@ def get_channel():
     if(len(checkprod) == 0):
         return jsonify({"Error" : "No existe ese con ese canal"})
     return jsonify({"canal encontrado ": checkprod})
+
+
+@app.route("/sermecoop/authorize", methods=["GET"])
+def srmc_authorize():
+    return "xD"
+
 
 if __name__ == "__main__":
     app.run(host="127.0.0.1", port=5000, debug=True)
