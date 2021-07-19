@@ -7,6 +7,7 @@ class ResPartnerList():
 
     def get_rut(data):
         """get one parnter for rut"""
+
         odoo_client = odoo.OdooClient()
         uid, models = odoo_client.logging()
         rut = data["rut"]
@@ -23,6 +24,7 @@ class ResPartnerCreate():
     """Odoo model: PostClient creat customer """
 
     def post(data):
+        """post partner"""
 
         odoo_client = odoo.OdooClient()
         uid, models = odoo_client.logging()
@@ -42,6 +44,8 @@ class ResPartnerUpdate():
     """Odoo model: Creat a customer reference ID """
 
     def put(data, id):
+        """method update partner"""
+
         odoo_client = odoo.OdooClient()
         uid, models = odoo_client.logging()
 
@@ -59,6 +63,8 @@ class ResPartnerDelete():
     """Odoo model: delete a customer reference ID """
 
     def delete(id):
+        """delte partner by id"""
+        
         odoo_client = odoo.OdooClient()
         uid, models = odoo_client.logging()
         models.execute_kw(odoo_client.db, uid, odoo_client.password, 'res.partner', 'unlink', [[int(id)]])
