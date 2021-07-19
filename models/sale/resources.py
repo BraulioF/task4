@@ -36,3 +36,18 @@ class SaleOrderList():
             [[['client_order_ref', '=', venta["client_order_ref"]],['team_id', '=', team_id]]],
             { 'fields': ['name'],'limit': 1})
         return team_details 
+
+    def get_id (data):
+        """get list order for id """
+        
+        odoo_client = odoo.OdooClient()
+        uid, models = odoo_client.logging()
+        id = data["id"]
+        team_details = models.execute_kw(odoo_client.db, uid, odoo_client.password,
+                            'sale.order', 'search_read',
+                            
+            [[['id', '=', id]]],
+            { 'fields': ['name', 'id','company_id','partner_id'],'limit': 1})
+            #['id', '=', id]
+            #'fields': ['name', 'id','company_id','partner_id'],
+        return team_details

@@ -18,3 +18,194 @@
 2021-07-19 16:18:07,847:INFO: * Restarting with stat
 2021-07-19 16:18:09,203:WARNING: * Debugger is active!
 2021-07-19 16:18:09,206:INFO: * Debugger PIN: 846-807-726
+2021-07-19 16:23:05,034:INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-07-19 16:23:05,042:INFO: * Restarting with stat
+2021-07-19 16:23:05,553:WARNING: * Debugger is active!
+2021-07-19 16:23:05,555:INFO: * Debugger PIN: 846-807-726
+2021-07-19 16:23:19,902:INFO:127.0.0.1 - - [19/Jul/2021 16:23:19] "GET /product/get HTTP/1.1" 200 -
+2021-07-19 16:41:42,439:INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-07-19 16:41:42,450:INFO: * Restarting with stat
+2021-07-19 16:41:43,197:WARNING: * Debugger is active!
+2021-07-19 16:41:43,198:INFO: * Debugger PIN: 846-807-726
+2021-07-19 16:41:47,364:INFO:127.0.0.1 - - [19/Jul/2021 16:41:47] "GET /sermecoop/authorize HTTP/1.1" 200 -
+2021-07-19 16:44:00,239:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/models/sale/resources.py', reloading
+2021-07-19 16:44:00,347:INFO: * Restarting with stat
+2021-07-19 16:44:01,790:WARNING: * Debugger is active!
+2021-07-19 16:44:01,792:INFO: * Debugger PIN: 846-807-726
+2021-07-19 16:44:04,978:INFO:127.0.0.1 - - [19/Jul/2021 16:44:04] "[35m[1mGET /sermecoop/authorize HTTP/1.1[0m" 500 -
+2021-07-19 16:44:23,041:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/models/sale/resources.py', reloading
+2021-07-19 16:44:23,275:INFO: * Restarting with stat
+2021-07-19 16:44:24,485:WARNING: * Debugger is active!
+2021-07-19 16:44:24,496:INFO: * Debugger PIN: 846-807-726
+2021-07-19 16:44:27,179:INFO:127.0.0.1 - - [19/Jul/2021 16:44:27] "GET /sermecoop/authorize HTTP/1.1" 200 -
+2021-07-19 16:45:28,116:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/models/sale/resources.py', reloading
+2021-07-19 16:45:28,203:INFO: * Restarting with stat
+2021-07-19 16:45:29,751:WARNING: * Debugger is active!
+2021-07-19 16:45:29,753:INFO: * Debugger PIN: 846-807-726
+2021-07-19 16:45:34,198:INFO:127.0.0.1 - - [19/Jul/2021 16:45:34] "GET /sermecoop/authorize HTTP/1.1" 200 -
+2021-07-19 16:58:02,098:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/models/sale/resources.py', reloading
+2021-07-19 16:58:02,158:INFO: * Restarting with stat
+2021-07-19 16:58:03,021:WARNING: * Debugger is active!
+2021-07-19 16:58:03,032:INFO: * Debugger PIN: 846-807-726
+2021-07-19 16:58:07,055:INFO:127.0.0.1 - - [19/Jul/2021 16:58:07] "GET /sermecoop/authorize HTTP/1.1" 200 -
+2021-07-19 16:58:53,561:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/models/sale/resources.py', reloading
+2021-07-19 16:58:53,680:INFO: * Restarting with stat
+2021-07-19 16:58:54,892:WARNING: * Debugger is active!
+2021-07-19 16:58:54,894:INFO: * Debugger PIN: 846-807-726
+2021-07-19 16:58:58,820:INFO:127.0.0.1 - - [19/Jul/2021 16:58:58] "[35m[1mGET /sermecoop/authorize HTTP/1.1[0m" 500 -
+2021-07-19 17:00:22,627:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/models/sale/resources.py', reloading
+2021-07-19 17:00:22,779:INFO: * Restarting with stat
+2021-07-19 17:00:24,092:WARNING: * Debugger is active!
+2021-07-19 17:00:24,101:INFO: * Debugger PIN: 846-807-726
+2021-07-19 17:00:27,325:INFO:127.0.0.1 - - [19/Jul/2021 17:00:27] "[35m[1mGET /sermecoop/authorize HTTP/1.1[0m" 500 -
+2021-07-19 17:00:52,407:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/models/sale/resources.py', reloading
+2021-07-19 17:00:52,611:INFO: * Restarting with stat
+2021-07-19 17:00:54,123:WARNING: * Debugger is active!
+2021-07-19 17:00:54,123:INFO: * Debugger PIN: 846-807-726
+2021-07-19 17:00:56,397:INFO:127.0.0.1 - - [19/Jul/2021 17:00:56] "GET /sermecoop/authorize HTTP/1.1" 200 -
+2021-07-19 17:01:15,367:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/models/sale/resources.py', reloading
+2021-07-19 17:01:15,482:INFO: * Restarting with stat
+2021-07-19 17:01:16,090:WARNING: * Debugger is active!
+2021-07-19 17:01:16,095:INFO: * Debugger PIN: 846-807-726
+2021-07-19 17:01:20,602:INFO:127.0.0.1 - - [19/Jul/2021 17:01:20] "GET /sermecoop/authorize HTTP/1.1" 200 -
+2021-07-19 17:01:51,432:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/models/sale/resources.py', reloading
+2021-07-19 17:01:51,493:INFO: * Restarting with stat
+2021-07-19 17:01:52,866:WARNING: * Debugger is active!
+2021-07-19 17:01:52,874:INFO: * Debugger PIN: 846-807-726
+2021-07-19 17:01:56,250:INFO:127.0.0.1 - - [19/Jul/2021 17:01:56] "GET /sermecoop/authorize HTTP/1.1" 200 -
+2021-07-19 17:03:15,577:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/models/sale/resources.py', reloading
+2021-07-19 17:03:15,657:INFO: * Restarting with stat
+2021-07-19 17:03:16,217:WARNING: * Debugger is active!
+2021-07-19 17:03:16,220:INFO: * Debugger PIN: 846-807-726
+2021-07-19 17:03:19,269:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/models/sale/resources.py', reloading
+2021-07-19 17:03:19,407:INFO: * Restarting with stat
+2021-07-19 17:03:20,520:WARNING: * Debugger is active!
+2021-07-19 17:03:20,524:INFO: * Debugger PIN: 846-807-726
+2021-07-19 17:03:25,141:INFO:127.0.0.1 - - [19/Jul/2021 17:03:25] "GET /sermecoop/authorize HTTP/1.1" 200 -
+2021-07-19 17:06:40,337:INFO:127.0.0.1 - - [19/Jul/2021 17:06:40] "GET /sermecoop/authorize HTTP/1.1" 200 -
+2021-07-19 17:07:17,355:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/models/sale/resources.py', reloading
+2021-07-19 17:07:17,484:INFO: * Restarting with stat
+2021-07-19 17:07:18,411:WARNING: * Debugger is active!
+2021-07-19 17:07:18,416:INFO: * Debugger PIN: 846-807-726
+2021-07-19 17:07:28,242:INFO:127.0.0.1 - - [19/Jul/2021 17:07:28] "GET /sermecoop/authorize HTTP/1.1" 200 -
+2021-07-19 17:08:01,857:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/models/sale/resources.py', reloading
+2021-07-19 17:08:01,953:INFO: * Restarting with stat
+2021-07-19 17:08:02,850:WARNING: * Debugger is active!
+2021-07-19 17:08:02,852:INFO: * Debugger PIN: 846-807-726
+2021-07-19 17:08:06,224:INFO:127.0.0.1 - - [19/Jul/2021 17:08:06] "GET /sermecoop/authorize HTTP/1.1" 200 -
+2021-07-19 17:14:45,955:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/models/sale/resources.py', reloading
+2021-07-19 17:14:46,054:INFO: * Restarting with stat
+2021-07-19 17:14:47,202:WARNING: * Debugger is active!
+2021-07-19 17:14:47,204:INFO: * Debugger PIN: 846-807-726
+2021-07-19 17:14:50,439:INFO:127.0.0.1 - - [19/Jul/2021 17:14:50] "GET /sermecoop/authorize HTTP/1.1" 200 -
+2021-07-19 17:18:53,470:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/models/partner/resources.py', reloading
+2021-07-19 17:18:53,567:INFO: * Restarting with stat
+2021-07-19 17:18:54,162:WARNING: * Debugger is active!
+2021-07-19 17:18:54,168:INFO: * Debugger PIN: 846-807-726
+2021-07-19 17:20:39,232:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/api.py', reloading
+2021-07-19 17:20:39,323:INFO: * Restarting with stat
+2021-07-19 17:20:40,245:WARNING: * Debugger is active!
+2021-07-19 17:20:40,247:INFO: * Debugger PIN: 846-807-726
+2021-07-19 17:21:27,752:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/models/partner/resources.py', reloading
+2021-07-19 17:21:27,892:INFO: * Restarting with stat
+2021-07-19 17:21:28,879:WARNING: * Debugger is active!
+2021-07-19 17:21:28,888:INFO: * Debugger PIN: 846-807-726
+2021-07-19 17:21:43,482:INFO:127.0.0.1 - - [19/Jul/2021 17:21:43] "GET /sermecoop/authorize HTTP/1.1" 200 -
+2021-07-19 17:22:47,703:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/models/partner/resources.py', reloading
+2021-07-19 17:22:47,908:INFO: * Restarting with stat
+2021-07-19 17:22:49,199:WARNING: * Debugger is active!
+2021-07-19 17:22:49,202:INFO: * Debugger PIN: 846-807-726
+2021-07-19 17:22:54,804:INFO:127.0.0.1 - - [19/Jul/2021 17:22:54] "GET /sermecoop/authorize HTTP/1.1" 200 -
+2021-07-19 17:25:43,914:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/models/partner/resources.py', reloading
+2021-07-19 17:25:44,063:INFO: * Restarting with stat
+2021-07-19 17:25:44,735:WARNING: * Debugger is active!
+2021-07-19 17:25:44,748:INFO: * Debugger PIN: 846-807-726
+2021-07-19 17:28:47,448:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/api.py', reloading
+2021-07-19 17:28:47,560:INFO: * Restarting with stat
+2021-07-19 17:28:48,394:WARNING: * Debugger is active!
+2021-07-19 17:28:48,396:INFO: * Debugger PIN: 846-807-726
+2021-07-19 17:29:06,043:INFO:127.0.0.1 - - [19/Jul/2021 17:29:06] "[35m[1mGET /sermecoop/authorize HTTP/1.1[0m" 500 -
+2021-07-19 17:33:01,381:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/api.py', reloading
+2021-07-19 17:33:01,452:INFO: * Restarting with stat
+2021-07-19 17:33:02,004:WARNING: * Debugger is active!
+2021-07-19 17:33:02,005:INFO: * Debugger PIN: 846-807-726
+2021-07-19 17:33:08,536:INFO:127.0.0.1 - - [19/Jul/2021 17:33:08] "GET /sermecoop/authorize HTTP/1.1" 200 -
+2021-07-19 17:34:27,947:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/models/partner/resources.py', reloading
+2021-07-19 17:34:28,022:INFO: * Restarting with stat
+2021-07-19 17:34:29,277:WARNING: * Debugger is active!
+2021-07-19 17:34:29,280:INFO: * Debugger PIN: 846-807-726
+2021-07-19 17:34:35,997:INFO:127.0.0.1 - - [19/Jul/2021 17:34:35] "GET /sermecoop/authorize HTTP/1.1" 200 -
+2021-07-19 17:39:00,826:INFO:127.0.0.1 - - [19/Jul/2021 17:39:00] "[35m[1mGET /sermecoop/authorize HTTP/1.1[0m" 500 -
+2021-07-19 17:44:40,114:INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-07-19 17:44:40,125:INFO: * Restarting with stat
+2021-07-19 17:44:41,041:WARNING: * Debugger is active!
+2021-07-19 17:44:41,043:INFO: * Debugger PIN: 846-807-726
+2021-07-19 17:44:48,525:INFO:127.0.0.1 - - [19/Jul/2021 17:44:48] "GET /sermecoop/authorize HTTP/1.1" 200 -
+2021-07-19 17:46:17,885:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/api.py', reloading
+2021-07-19 17:46:17,994:INFO: * Restarting with stat
+2021-07-19 17:46:18,632:WARNING: * Debugger is active!
+2021-07-19 17:46:18,636:INFO: * Debugger PIN: 846-807-726
+2021-07-19 17:46:24,697:INFO:127.0.0.1 - - [19/Jul/2021 17:46:24] "GET /sermecoop/authorize HTTP/1.1" 200 -
+2021-07-19 17:46:41,909:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/api.py', reloading
+2021-07-19 17:46:41,979:INFO: * Restarting with stat
+2021-07-19 17:46:42,519:WARNING: * Debugger is active!
+2021-07-19 17:46:42,521:INFO: * Debugger PIN: 846-807-726
+2021-07-19 17:46:48,302:INFO:127.0.0.1 - - [19/Jul/2021 17:46:48] "GET /sermecoop/authorize HTTP/1.1" 200 -
+2021-07-19 17:47:37,015:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/api.py', reloading
+2021-07-19 17:47:37,088:INFO: * Restarting with stat
+2021-07-19 17:47:37,904:WARNING: * Debugger is active!
+2021-07-19 17:47:37,906:INFO: * Debugger PIN: 846-807-726
+2021-07-19 17:47:43,027:INFO:127.0.0.1 - - [19/Jul/2021 17:47:43] "GET /sermecoop/authorize HTTP/1.1" 200 -
+2021-07-19 17:48:26,449:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/api.py', reloading
+2021-07-19 17:48:26,548:INFO: * Restarting with stat
+2021-07-19 17:48:27,130:WARNING: * Debugger is active!
+2021-07-19 17:48:27,134:INFO: * Debugger PIN: 846-807-726
+2021-07-19 17:48:34,903:INFO:127.0.0.1 - - [19/Jul/2021 17:48:34] "GET /sermecoop/authorize HTTP/1.1" 200 -
+2021-07-19 17:50:26,008:INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-07-19 17:50:26,017:INFO: * Restarting with stat
+2021-07-19 17:50:26,642:WARNING: * Debugger is active!
+2021-07-19 17:50:26,646:INFO: * Debugger PIN: 846-807-726
+2021-07-19 17:50:32,466:INFO:127.0.0.1 - - [19/Jul/2021 17:50:32] "GET /sermecoop/authorize HTTP/1.1" 200 -
+2021-07-19 17:50:47,925:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/api.py', reloading
+2021-07-19 17:50:48,068:INFO: * Restarting with stat
+2021-07-19 17:50:49,450:WARNING: * Debugger is active!
+2021-07-19 17:50:49,454:INFO: * Debugger PIN: 846-807-726
+2021-07-19 17:50:54,748:INFO:127.0.0.1 - - [19/Jul/2021 17:50:54] "GET /sermecoop/authorize HTTP/1.1" 200 -
+2021-07-19 17:51:24,861:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/models/partner/resources.py', reloading
+2021-07-19 17:51:24,979:INFO: * Restarting with stat
+2021-07-19 17:51:25,919:WARNING: * Debugger is active!
+2021-07-19 17:51:25,923:INFO: * Debugger PIN: 846-807-726
+2021-07-19 17:56:53,627:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/models/sale_order_line/resources.py', reloading
+2021-07-19 17:56:53,750:INFO: * Restarting with stat
+2021-07-19 17:56:54,661:WARNING: * Debugger is active!
+2021-07-19 17:56:54,663:INFO: * Debugger PIN: 846-807-726
+2021-07-19 17:59:16,938:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/models/sale_order_line/resources.py', reloading
+2021-07-19 17:59:17,045:INFO: * Restarting with stat
+2021-07-19 17:59:18,175:WARNING: * Debugger is active!
+2021-07-19 17:59:18,180:INFO: * Debugger PIN: 846-807-726
+2021-07-19 18:01:20,342:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/api.py', reloading
+2021-07-19 18:01:20,457:INFO: * Restarting with stat
+2021-07-19 18:01:21,208:WARNING: * Debugger is active!
+2021-07-19 18:01:21,214:INFO: * Debugger PIN: 846-807-726
+2021-07-19 18:01:32,342:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/api.py', reloading
+2021-07-19 18:01:32,436:INFO: * Restarting with stat
+2021-07-19 18:01:33,076:WARNING: * Debugger is active!
+2021-07-19 18:01:33,080:INFO: * Debugger PIN: 846-807-726
+2021-07-19 18:02:22,615:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/api.py', reloading
+2021-07-19 18:02:22,743:INFO: * Restarting with stat
+2021-07-19 18:02:23,494:WARNING: * Debugger is active!
+2021-07-19 18:02:23,497:INFO: * Debugger PIN: 846-807-726
+2021-07-19 18:05:22,242:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/api.py', reloading
+2021-07-19 18:05:22,356:INFO: * Restarting with stat
+2021-07-19 18:05:23,336:WARNING: * Debugger is active!
+2021-07-19 18:05:23,339:INFO: * Debugger PIN: 846-807-726
+2021-07-19 18:05:29,371:INFO: vista : /sermecoop/authorize
+2021-07-19 18:05:30,449:INFO:se encontro [{'id': 7167, 'name': 'SO7209', 'company_id': [1, 'Fracción SpA'], 'partner_id': [12241, 'Don Amar']}]
+2021-07-19 18:05:32,539:INFO:127.0.0.1 - - [19/Jul/2021 18:05:32] "[35m[1mGET /sermecoop/authorize HTTP/1.1[0m" 500 -
+2021-07-19 18:05:42,576:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/api.py', reloading
+2021-07-19 18:05:42,650:INFO: * Restarting with stat
+2021-07-19 18:05:43,547:WARNING: * Debugger is active!
+2021-07-19 18:05:43,556:INFO: * Debugger PIN: 846-807-726
+2021-07-19 18:05:45,244:INFO: vista : /sermecoop/authorize
+2021-07-19 18:05:46,335:INFO:se encontro [{'id': 7167, 'name': 'SO7209', 'company_id': [1, 'Fracción SpA'], 'partner_id': [12241, 'Don Amar']}]
+2021-07-19 18:05:47,373:INFO:127.0.0.1 - - [19/Jul/2021 18:05:47] "[35m[1mGET /sermecoop/authorize HTTP/1.1[0m" 500 -

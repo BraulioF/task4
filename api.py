@@ -1,4 +1,5 @@
 """ views models"""
+from models.sale.resources import SaleOrderList
 from flask import Flask, json, jsonify, request
 from models import *
 from models import odoo
@@ -237,7 +238,19 @@ def get_channel():
 
 @app.route("/sermecoop/authorize", methods=["GET"])
 def srmc_authorize():
-    return "xD"
+    logging.info(" vista : /sermecoop/authorize")
+    data = request.get_json()
+    value= data["sale_id"]
+
+    result = rs_sale.SaleOrderList.get_id(value)
+    logging.info(f'se encontro {result}')
+    id = result[0]["partner_id"][0]
+    partner = rs_partner.ResPartnerList.get_id(id)
+
+    #sale_order_line = rs_sale_line.SaleOrderLineList.get_id(value)
+
+    return jsonify({"retornamos":sale_order_line})
+    
 
 
 if __name__ == "__main__":

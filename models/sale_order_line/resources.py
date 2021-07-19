@@ -18,5 +18,21 @@ class SaleOrderLineCreate():
             
         return id
 
+class SaleOrderLineList():
+    """get sale.order.line by sale_id"""
 
+    def get_id(sale_id):
+        """get order line in odoo"""
+        
+        odoo_client = odoo.OdooClient()
+        uid, models = odoo_client.logging()
+        id = sale_id
+
+        partner = models.execute_kw(odoo_client.db, uid, odoo_client.password,
+            'sale.order.line', 'search_read',
+            [[['order_line', '=', id]]],
+            {'fields': ['id','product_id','product_oun_qt'],'limit': 2}) 
+            #['id', '=', id]
+            #'fields': ['name', 'id', 'phone', 'email', 'rut']
+        return partner
     

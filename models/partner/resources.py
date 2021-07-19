@@ -18,6 +18,20 @@ class ResPartnerList():
             {'fields': ['name', 'id', 'phone', 'email', 'rut']})
  
         return partner
+    
+    def get_id(data):
+        """get one partner by id"""
+        odoo_client = odoo.OdooClient()
+        uid, models = odoo_client.logging()
+        id = data
+
+        partner = models.execute_kw(odoo_client.db, uid, odoo_client.password,
+            'res.partner', 'search_read',
+            [[['id', '=', id]]],
+            {'fields': ['rut'],'limit': 2}) 
+            #['id', '=', id]
+            #'fields': ['name', 'id', 'phone', 'email', 'rut']
+        return partner
 
 
 class ResPartnerCreate():
