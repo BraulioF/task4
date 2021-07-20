@@ -90,12 +90,15 @@ def drop_partner():
 #POST A VENTAS
 @app.route("/sale", methods=["POST"])
 def sale_create():
+    logging.info(f'vista -->  /sale')
     data = request.get_json()
+    logging.info(f'data recivida {data}')
     dat = data["venta"]
     team = rs_team.TeamList.get_name(dat)
     if(len(team) == 0):
         valor = data['venta']
         valoresp = valor['name']
+        logging.error(f'{valoresp} No existe en la Base de Datos')
         return (f'{valoresp} No existe en la Base de Datos')
     else:
         sales = data["venta"] 
@@ -105,58 +108,72 @@ def sale_create():
         if(len(get_team_repeticion) != 0):
             val = get_team_repeticion[0]
             idventa = val['name']
+            logging.error(f'{idventa} Esa Venta ya existe en la Base de Datos')
             return jsonify("Esa venta ya existe "+idventa)
         else:       
             cliente = data["cliente"] 
             partner = rs_partner.ResPartnerList.get_rut(cliente)
-            if (partner == []):           
+            if (partner == []):
+                logging.info(f'No existe el cliente por lo que se creo uno nuevo')           
                 partner_id = rs_partner.ResPartnerCreate.post(cliente)
             else:                
                 partner_id = partner[0]['id']
+                logging.info(f'existe el cliente {partner_id}')  
 
             valoressale = data['venta']
             product = rs_product_template.ProductList.get_default_code(valoressale)
             if(len(product)== 0):
+                logging.error(f'No existe el producto') 
                 return"No existe ese Producto"       
             else:
                 order = data["venta"] 
                 order_id = rs_sale.SaleOrderCreate.post(order,partner_id,team_id)
+                logging.info(f'orden creada {order_id}') 
                 order_line = data["producto"]               
                 rs_sale_line.SaleOrderLineCreate.post(order_line,order_id)
+                logging.info(f'line agregada a la orden') 
             
             return jsonify({"creado":order_line})
 
 ##GET PRODUCT
 @app.route("/product/get", methods=["GET"])
 def get_prod():
-   
+    logging.info("Vista --> /product/get")
     data = request.get_json()
     product = data["get_producto"]
     checkprod = rs_product_template.ProductList.get_default_code(product)
     if(len(checkprod) == 0):
+        logging.error("Error : no existe un producto con ese defaultcode")
         return jsonify({"Error" : "No existe un producto con ese defaultcode"})
+    logging.info(f'producto encontrado {checkprod}')
     return jsonify({"producto encontrado ": checkprod})
 
 ## CREATE PRODUCT
 @app.route("/product/create", methods=["POST"])
 def createproduct():
 
+    logging.info("Vista --> /product/create")
     data = request.get_json()
+    logging.info(f'data obtenida --> {data}')
     product = data["create_prod"]
     checkprod = rs_product_template.ProductList.get_default_code(product)
     if(len(checkprod) != 0):
+        logging.error(f'Error-> no existe un producto con {checkprod}')
         return jsonify({"Error" : "Ya existe un producto con ese defaultcode"})
     if(len(rs_product_template.ProductList.get_barcode(product)) != 0):
+        logging.error(f'Error-> ya existe un producto con ese barcode')
         return jsonify({"Error" : "Ya existe un producto con ese barcode"})
     
     verif = rs_product_categ.ProductCategList.get_name(product)    
     if(len(verif)==0):        
         val = product["categ_name"]
+        logging.error(f'no existe esa categoria')
         return "No existe la categoria :"+ val
 
     check = rs_uom.UomList.get_uom(product)
     if(len(check)==0):
         val = product["uom_name"]
+        logging.error(f'no existe esa unidad de medida')
         return "No existe la unidad de medida :"+ val
     check_po = rs_uom.UomList.get_uom(product)
     verif = verif[0]
@@ -169,16 +186,18 @@ def createproduct():
     logging.info(id_display_uom)
     logging.info(id_display_uom_po)
     crear = rs_product_template.ProductCreate.post(product,id_name_categ,id_display_uom,id_display_uom_po)
-    
+    logging.info(f'producto creado con exito {crear}')
     return jsonify({" Producto creado ":crear})
 
 #UPDATE PRODUCT
 @app.route("/product/update", methods=["PUT"])
 def update_product():
+    logging.info("vista --> /product/template")
     data = request.get_json()
     product = data["update_prod"]
     checkprod = rs_product_template.ProductList.get_default_code(product)
     if(len(checkprod) == 0):
+        logging.error("Error no existe un producto con ese defaultcode")
         return jsonify({"Error" : "No existe un producto con ese defaultcode"})
     else:
         ###
@@ -186,6 +205,7 @@ def update_product():
         verif = rs_product_categ.ProductCategList.get_name(product)    
         if(len(verif)==0):        
             val = product["categ_name"]
+            logging.e
             return "No existe la categoria :"+ val
         check = rs_uom.UomList.get_uom(product)
         if(len(check)==0):
@@ -265,7 +285,7 @@ def srmc_authorize():
         name = product[0]["name"]
         categ= product[0]["categ_id"][1]
         quantity = sale_order_line[i]["product_uom_qty"]
-        details.append({"pclass": categ, "name": name, "sku":sku, "quantity":quantity})
+        details.append({"pclass": categ, "name": name, "sku":sku, "quantity":int(quantity)})
     
 
     
@@ -273,7 +293,7 @@ def srmc_authorize():
         "operation_number": result[0]["id"],
         "company": result[0]["company_id"][0],
         "policy": result[0]["id"],
-        "transaction_datetime": str(datetime.datetime.now().date()),
+        "transaction_datetime": str(datetime.datetime.now()),
         "store": result[0]["id"],
         "pos": result[0]["id"],
         "store_description": "Caja 3 Local 1 FRACCION",
@@ -285,7 +305,7 @@ def srmc_authorize():
         "details" : details
     })
     
-     
+    logging.info(productdata)
     url = 'https://fracciondte.brazilsouth.cloudapp.azure.com/auth/token/'
     payload = {"username": "fraccion_erp_test","password": "erp.test"}
     
@@ -293,7 +313,6 @@ def srmc_authorize():
     
     if response.status_code == 200:
         val = response.json()
-        print(val)
         
         url = 'http://fracciondte.brazilsouth.cloudapp.azure.com/sermecoop/authorize/'
 
