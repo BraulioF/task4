@@ -30,8 +30,9 @@ class SaleOrderLineList():
 
         partner = models.execute_kw(odoo_client.db, uid, odoo_client.password,
             'sale.order.line', 'search_read',
-            [[['order_line', '=', id]]],
-            {'fields': ['id','product_id','product_oun_qt'],'limit': 2}) 
+            [[['order_id', '=', id]]],
+            {'fields': ['id','product_id','product_uom_qty']}) 
+            #,'limit': 2
             #['id', '=', id]
             #'fields': ['name', 'id', 'phone', 'email', 'rut']
         return partner

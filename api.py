@@ -238,18 +238,50 @@ def get_channel():
 
 @app.route("/sermecoop/authorize", methods=["GET"])
 def srmc_authorize():
+    #SO7209 => 7167
+    #SO7166 => 7135
+
     logging.info(" vista : /sermecoop/authorize")
     data = request.get_json()
     value= data["sale_id"]
 
     result = rs_sale.SaleOrderList.get_id(value)
-    logging.info(f'se encontro {result}')
+    logging.info(f'se encontro a partir de Sale order list {result}')
     id = result[0]["partner_id"][0]
+
     partner = rs_partner.ResPartnerList.get_id(id)
+    logging.info(f'se encontro a partir de partner {partner}')
+    sale = result[0]["name"]
 
-    #sale_order_line = rs_sale_line.SaleOrderLineList.get_id(value)
+    sale_order_line = rs_sale_line.SaleOrderLineList.get_id(sale)   
+    logging.info(f'se encontro a partir de sale order line {sale_order_line}')
+    details = []
+    for i in range(len(sale_order_line)):
+        id = sale_order_line[i]["product_id"][0]
+        product = rs_product.ProductList.get_id(id)
+        logging.info(f'se encontro el product.product -> {product}')
+        sku = product[0]["default_code"]
+        name = product[0]["name"]
+        categ= product[0]["categ_id"][1]
+        quantity = sale_order_line[i]["product_uom_qty"]
+        details.append({"pclass": categ, "name": name, "sku":sku, "quantity":quantity})
+        
 
-    return jsonify({"retornamos":sale_order_line})
+    return jsonify({
+        "operation_number": result[0]["id"],
+        "company": result[0]["company_id"][0],
+        "policy": result[0]["id"],
+        "transaction_datetime": datetime.datetime.now().date(),
+        "store": result[0]["id"],
+        "pos": result[0]["id"],
+        "store_description": "Caja 3 Local 1 FRACCION",
+        "invoice": result[0]["id"],
+        "client_rut": partner[0]["rut"],
+        "client_sequence": 1003,
+        "beneficiary_rut": partner[0]["rut"],
+        "doctor_rut": partner[0]["rut"],
+        "details" : details
+    })
     
 
 
