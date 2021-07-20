@@ -1,6 +1,7 @@
 """ views models"""
 from models.sale.resources import SaleOrderList
 from flask import Flask, json, jsonify, request
+import requests
 from models import *
 from models import odoo
 
@@ -236,7 +237,7 @@ def get_channel():
     return jsonify({"canal encontrado ": checkprod})
 
 
-@app.route("/sermecoop/authorize", methods=["GET"])
+@app.route("/sermecoop/authorize", methods=["POST"])
 def srmc_authorize():
     #SO7209 => 7167
     #SO7166 => 7135
@@ -265,13 +266,14 @@ def srmc_authorize():
         categ= product[0]["categ_id"][1]
         quantity = sale_order_line[i]["product_uom_qty"]
         details.append({"pclass": categ, "name": name, "sku":sku, "quantity":quantity})
-        
+    
 
-    return jsonify({
+    
+    productdata =  ({
         "operation_number": result[0]["id"],
         "company": result[0]["company_id"][0],
         "policy": result[0]["id"],
-        "transaction_datetime": datetime.datetime.now().date(),
+        "transaction_datetime": str(datetime.datetime.now().date()),
         "store": result[0]["id"],
         "pos": result[0]["id"],
         "store_description": "Caja 3 Local 1 FRACCION",
@@ -283,7 +285,29 @@ def srmc_authorize():
         "details" : details
     })
     
+     
+    url = 'https://fracciondte.brazilsouth.cloudapp.azure.com/auth/token/'
+    payload = {"username": "fraccion_erp_test","password": "erp.test"}
+    
+    response = requests.post(url, json=payload)
+    
+    if response.status_code == 200:
+        val = response.json()
+        print(val)
+        
+        url = 'http://fracciondte.brazilsouth.cloudapp.azure.com/sermecoop/authorize/'
+
+        header = {'Authorization': 'Bearer ' + val["access_token"]}
+
+        #productdatajson = productdata.json()
+        response2 = requests.post(url, json=productdata, headers=header)
+        #print(f'{response.json()}')
+        print("--Terminado--")    
+        return (response2.json())
+
 
 
 if __name__ == "__main__":
     app.run(host="127.0.0.1", port=5000, debug=True)
+
+    
