@@ -232,6 +232,8 @@ def update_product():
 def drop_prod():
 
     data = request.get_json()
+    logging.info("Vista --> /product/drop")
+    logging.info(f'data obtenido {data}')
     prod = data["delete_producto"]
     check = rs_product_template.ProductList.get_default_code(prod)
     if(len(check)== 0):
@@ -248,7 +250,7 @@ def drop_prod():
 ##GET CATEGORIA
 @app.route("/canal", methods=["GET"])
 def get_channel():
-   
+    logging.info(" vista : /canal")
     data = request.get_json()
     canal = data["get_canal"]
     checkprod = rs_team.TeamList.get_name(canal)
@@ -318,10 +320,8 @@ def srmc_authorize():
 
         header = {'Authorization': 'Bearer ' + val["access_token"]}
 
-        #productdatajson = productdata.json()
         response2 = requests.post(url, json=productdata, headers=header)
-        #print(f'{response.json()}')
-        print("--Terminado--")    
+         
         return (response2.json())
 
 
