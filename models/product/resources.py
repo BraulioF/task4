@@ -11,5 +11,5 @@ class ProductList():
         default_code = models.execute_kw(odoo_client.db, uid, odoo_client.password,
                         'product.product', 'search_read',
             [[['id', '=', product]]],
-            { 'fields': ['default_code','name','categ_id'] ,'limit': 1})
+            { 'fields': ['default_code','name','categ_id','price'] ,'limit': 1})
         return default_code
