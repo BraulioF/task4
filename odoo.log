@@ -23,3 +23,220 @@
 2021-07-22 12:14:56,299:DEBUG:Starting new HTTP connection (1): fracciondte.brazilsouth.cloudapp.azure.com:80
 2021-07-22 12:14:58,057:DEBUG:http://fracciondte.brazilsouth.cloudapp.azure.com:80 "POST /sermecoop/nullify/ HTTP/1.1" 200 111
 2021-07-22 12:14:58,059:INFO:127.0.0.1 - - [22/Jul/2021 12:14:58] "POST /sermecoop/authorize HTTP/1.1" 200 -
+2021-07-22 13:39:59,179:INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-07-22 13:39:59,185:INFO: * Restarting with stat
+2021-07-22 13:39:59,990:WARNING: * Debugger is active!
+2021-07-22 13:39:59,992:INFO: * Debugger PIN: 526-839-953
+2021-07-22 13:40:05,147:INFO: vista : /sermecoop/authorize
+2021-07-22 13:40:06,221:INFO:se encontro a partir de Sale order list [{'id': 7167, 'name': 'SO7209', 'company_id': [1, 'Fracción SpA'], 'partner_id': [12241, 'Don Amar']}]
+2021-07-22 13:40:07,245:INFO:se encontro a partir de partner [{'id': 12241, 'rut': '212121-9'}]
+2021-07-22 13:40:08,305:INFO:se encontro a partir de sale order line [{'id': 17060, 'product_id': [6572, '[1201] Artesol 50mg x 30 comprimidos'], 'product_uom_qty': 12.0}, {'id': 17063, 'product_id': [15313, '[00001] VC-Producto 1'], 'product_uom_qty': 2.0}, {'id': 17064, 'product_id': [15314, '[00002] VC-Producto 2'], 'product_uom_qty': 1.0}, {'id': 17065, 'product_id': [15316, '[00005] VC-Producto 5'], 'product_uom_qty': 3.0}]
+2021-07-22 13:40:09,315:INFO:se encontro el product.product -> [{'id': 6572, 'default_code': '1201', 'name': 'Artesol 50mg x 30 comprimidos', 'categ_id': [68, 'Medicamentos / Sistema Sanguíneo'], 'price': 0.0}]
+2021-07-22 13:40:10,325:INFO:se encontro el product.product -> [{'id': 15313, 'default_code': '00001', 'name': 'VC-Producto 1', 'categ_id': [10, 'All / Cosmético'], 'price': 0.0}]
+2021-07-22 13:40:11,315:INFO:se encontro el product.product -> [{'id': 15314, 'default_code': '00002', 'name': 'VC-Producto 2', 'categ_id': [1, 'All'], 'price': 0.0}]
+2021-07-22 13:40:12,338:INFO:se encontro el product.product -> [{'id': 15316, 'default_code': '00005', 'name': 'VC-Producto 5', 'categ_id': [1, 'All'], 'price': 0.0}]
+2021-07-22 13:40:12,338:INFO:{'operation_number': 7167, 'company': 1, 'policy': 7167, 'transaction_datetime': '2021-07-22 13:40:12.338441', 'store': 7167, 'pos': 7167, 'store_description': 'Caja 3 Local 1 FRACCION', 'invoice': 7167, 'client_rut': '212121-9', 'client_sequence': 1003, 'beneficiary_rut': '212121-9', 'doctor_rut': '212121-9', 'details': [{'pclass': 'Medicamentos / Sistema Sanguíneo', 'name': 'Artesol 50mg x 30 comprimidos', 'sku': '1201', 'quantity': 12, 'price': 0.0, 'bonus': 10, 'deductible': 10, 'copay': 10}, {'pclass': 'All / Cosmético', 'name': 'VC-Producto 1', 'sku': '00001', 'quantity': 2, 'price': 0.0, 'bonus': 10, 'deductible': 10, 'copay': 10}, {'pclass': 'All', 'name': 'VC-Producto 2', 'sku': '00002', 'quantity': 1, 'price': 0.0, 'bonus': 10, 'deductible': 10, 'copay': 10}, {'pclass': 'All', 'name': 'VC-Producto 5', 'sku': '00005', 'quantity': 3, 'price': 0.0, 'bonus': 10, 'deductible': 10, 'copay': 10}]}
+2021-07-22 13:40:12,349:DEBUG:Starting new HTTPS connection (1): fracciondte.brazilsouth.cloudapp.azure.com:443
+2021-07-22 13:40:13,014:DEBUG:https://fracciondte.brazilsouth.cloudapp.azure.com:443 "POST /auth/token/ HTTP/1.1" 200 177
+2021-07-22 13:40:13,017:INFO:El token obtenido es AjPkNzPvE9EWrtEV0FKPLsN1Ax4Q9D
+2021-07-22 13:40:13,033:DEBUG:Starting new HTTP connection (1): fracciondte.brazilsouth.cloudapp.azure.com:80
+2021-07-22 13:40:15,321:DEBUG:http://fracciondte.brazilsouth.cloudapp.azure.com:80 "POST /sermecoop/authorize/ HTTP/1.1" 200 300
+2021-07-22 13:40:15,323:INFO:authorize nos retorna {'sales_id': 376278130, 'query_id': 1567657, 'error_code': '00', 'error_description': '000000000000000000000000000Autorizado OK', 'beneficiary_birthday': '19570108', 'beneficiary_gender': 'M', 'bonus_items': {'pclass': 'BG', 'bonus_percent': 90, 'bonus_max': 0, 'deductible': 0}, 'event_max': 1390041, 'event_deductible': 0}
+2021-07-22 13:40:15,331:DEBUG:Starting new HTTP connection (1): fracciondte.brazilsouth.cloudapp.azure.com:80
+2021-07-22 13:40:17,267:DEBUG:http://fracciondte.brazilsouth.cloudapp.azure.com:80 "POST /sermecoop/confirmation/ HTTP/1.1" 200 145
+2021-07-22 13:40:17,268:INFO:se obtuvo -> 29677704
+2021-07-22 13:40:17,277:DEBUG:Starting new HTTP connection (1): fracciondte.brazilsouth.cloudapp.azure.com:80
+2021-07-22 13:40:19,119:DEBUG:http://fracciondte.brazilsouth.cloudapp.azure.com:80 "POST /sermecoop/nullify/ HTTP/1.1" 200 111
+2021-07-22 13:40:19,121:INFO:127.0.0.1 - - [22/Jul/2021 13:40:19] "POST /sermecoop/authorize HTTP/1.1" 200 -
+2021-07-22 13:45:13,139:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/models/sale_sermecoop/resources.py', reloading
+2021-07-22 13:45:13,253:INFO: * Restarting with stat
+2021-07-22 13:45:14,078:WARNING: * Debugger is active!
+2021-07-22 13:45:14,083:INFO: * Debugger PIN: 526-839-953
+2021-07-22 13:46:47,124:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/api.py', reloading
+2021-07-22 13:46:47,271:INFO: * Restarting with stat
+2021-07-22 13:46:48,454:WARNING: * Debugger is active!
+2021-07-22 13:46:48,456:INFO: * Debugger PIN: 526-839-953
+2021-07-22 13:46:56,582:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/models/sale_sermecoop/resources.py', reloading
+2021-07-22 13:46:56,729:INFO: * Restarting with stat
+2021-07-22 13:46:58,032:WARNING: * Debugger is active!
+2021-07-22 13:46:58,035:INFO: * Debugger PIN: 526-839-953
+2021-07-22 13:46:59,085:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/api.py', reloading
+2021-07-22 13:46:59,262:INFO: * Restarting with stat
+2021-07-22 13:47:00,177:WARNING: * Debugger is active!
+2021-07-22 13:47:00,180:INFO: * Debugger PIN: 526-839-953
+2021-07-22 13:47:02,783:INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-07-22 13:47:02,789:INFO: * Restarting with stat
+2021-07-22 13:47:03,911:WARNING: * Debugger is active!
+2021-07-22 13:47:03,913:INFO: * Debugger PIN: 526-839-953
+2021-07-22 13:47:09,022:INFO: vista : /sermecoop/authorize
+2021-07-22 13:47:10,189:INFO:se encontro a partir de Sale order list [{'id': 7167, 'name': 'SO7209', 'company_id': [1, 'Fracción SpA'], 'partner_id': [12241, 'Don Amar']}]
+2021-07-22 13:47:11,231:INFO:se encontro a partir de partner [{'id': 12241, 'rut': '212121-9'}]
+2021-07-22 13:47:12,359:INFO:se encontro a partir de sale order line [{'id': 17060, 'product_id': [6572, '[1201] Artesol 50mg x 30 comprimidos'], 'product_uom_qty': 12.0}, {'id': 17063, 'product_id': [15313, '[00001] VC-Producto 1'], 'product_uom_qty': 2.0}, {'id': 17064, 'product_id': [15314, '[00002] VC-Producto 2'], 'product_uom_qty': 1.0}, {'id': 17065, 'product_id': [15316, '[00005] VC-Producto 5'], 'product_uom_qty': 3.0}]
+2021-07-22 13:47:13,479:INFO:se encontro el product.product -> [{'id': 6572, 'default_code': '1201', 'name': 'Artesol 50mg x 30 comprimidos', 'categ_id': [68, 'Medicamentos / Sistema Sanguíneo'], 'price': 0.0}]
+2021-07-22 13:47:14,589:INFO:se encontro el product.product -> [{'id': 15313, 'default_code': '00001', 'name': 'VC-Producto 1', 'categ_id': [10, 'All / Cosmético'], 'price': 0.0}]
+2021-07-22 13:47:15,586:INFO:se encontro el product.product -> [{'id': 15314, 'default_code': '00002', 'name': 'VC-Producto 2', 'categ_id': [1, 'All'], 'price': 0.0}]
+2021-07-22 13:47:16,595:INFO:se encontro el product.product -> [{'id': 15316, 'default_code': '00005', 'name': 'VC-Producto 5', 'categ_id': [1, 'All'], 'price': 0.0}]
+2021-07-22 13:47:16,596:INFO:{'operation_number': 7167, 'company': 1, 'policy': 7167, 'transaction_datetime': '2021-07-22 13:47:16.596088', 'store': 7167, 'pos': 7167, 'store_description': 'Caja 3 Local 1 FRACCION', 'invoice': 7167, 'client_rut': '212121-9', 'client_sequence': 1003, 'beneficiary_rut': '212121-9', 'doctor_rut': '212121-9', 'details': [{'pclass': 'Medicamentos / Sistema Sanguíneo', 'name': 'Artesol 50mg x 30 comprimidos', 'sku': '1201', 'quantity': 12, 'price': 0.0, 'bonus': 10, 'deductible': 10, 'copay': 10}, {'pclass': 'All / Cosmético', 'name': 'VC-Producto 1', 'sku': '00001', 'quantity': 2, 'price': 0.0, 'bonus': 10, 'deductible': 10, 'copay': 10}, {'pclass': 'All', 'name': 'VC-Producto 2', 'sku': '00002', 'quantity': 1, 'price': 0.0, 'bonus': 10, 'deductible': 10, 'copay': 10}, {'pclass': 'All', 'name': 'VC-Producto 5', 'sku': '00005', 'quantity': 3, 'price': 0.0, 'bonus': 10, 'deductible': 10, 'copay': 10}]}
+2021-07-22 13:47:16,615:DEBUG:Starting new HTTPS connection (1): fracciondte.brazilsouth.cloudapp.azure.com:443
+2021-07-22 13:47:17,212:DEBUG:https://fracciondte.brazilsouth.cloudapp.azure.com:443 "POST /auth/token/ HTTP/1.1" 200 177
+2021-07-22 13:47:17,224:DEBUG:Starting new HTTP connection (1): fracciondte.brazilsouth.cloudapp.azure.com:80
+2021-07-22 13:47:19,227:DEBUG:http://fracciondte.brazilsouth.cloudapp.azure.com:80 "POST /sermecoop/authorize/ HTTP/1.1" 200 300
+2021-07-22 13:47:19,228:INFO:authorize nos retorna {'sales_id': 376278130, 'query_id': 1567657, 'error_code': '00', 'error_description': '000000000000000000000000000Autorizado OK', 'beneficiary_birthday': '19570108', 'beneficiary_gender': 'M', 'bonus_items': {'pclass': 'BG', 'bonus_percent': 90, 'bonus_max': 0, 'deductible': 0}, 'event_max': 1390041, 'event_deductible': 0}
+2021-07-22 13:47:19,284:INFO:127.0.0.1 - - [22/Jul/2021 13:47:19] "[35m[1mPOST /sermecoop/authorize HTTP/1.1[0m" 500 -
+2021-07-22 13:48:00,549:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/api.py', reloading
+2021-07-22 13:48:00,684:INFO: * Restarting with stat
+2021-07-22 13:48:01,838:WARNING: * Debugger is active!
+2021-07-22 13:48:01,840:INFO: * Debugger PIN: 526-839-953
+2021-07-22 13:48:31,192:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/api.py', reloading
+2021-07-22 13:48:31,295:INFO: * Restarting with stat
+2021-07-22 13:48:32,193:WARNING: * Debugger is active!
+2021-07-22 13:48:32,198:INFO: * Debugger PIN: 526-839-953
+2021-07-22 13:48:36,443:INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-07-22 13:48:36,451:INFO: * Restarting with stat
+2021-07-22 13:48:37,502:WARNING: * Debugger is active!
+2021-07-22 13:48:37,506:INFO: * Debugger PIN: 526-839-953
+2021-07-22 13:48:40,757:INFO: vista : /sermecoop/authorize
+2021-07-22 13:48:41,814:INFO:se encontro a partir de Sale order list [{'id': 7167, 'name': 'SO7209', 'company_id': [1, 'Fracción SpA'], 'partner_id': [12241, 'Don Amar']}]
+2021-07-22 13:48:42,868:INFO:se encontro a partir de partner [{'id': 12241, 'rut': '212121-9'}]
+2021-07-22 13:48:43,965:INFO:se encontro a partir de sale order line [{'id': 17060, 'product_id': [6572, '[1201] Artesol 50mg x 30 comprimidos'], 'product_uom_qty': 12.0}, {'id': 17063, 'product_id': [15313, '[00001] VC-Producto 1'], 'product_uom_qty': 2.0}, {'id': 17064, 'product_id': [15314, '[00002] VC-Producto 2'], 'product_uom_qty': 1.0}, {'id': 17065, 'product_id': [15316, '[00005] VC-Producto 5'], 'product_uom_qty': 3.0}]
+2021-07-22 13:48:45,027:INFO:se encontro el product.product -> [{'id': 6572, 'default_code': '1201', 'name': 'Artesol 50mg x 30 comprimidos', 'categ_id': [68, 'Medicamentos / Sistema Sanguíneo'], 'price': 0.0}]
+2021-07-22 13:48:46,067:INFO:se encontro el product.product -> [{'id': 15313, 'default_code': '00001', 'name': 'VC-Producto 1', 'categ_id': [10, 'All / Cosmético'], 'price': 0.0}]
+2021-07-22 13:48:47,089:INFO:se encontro el product.product -> [{'id': 15314, 'default_code': '00002', 'name': 'VC-Producto 2', 'categ_id': [1, 'All'], 'price': 0.0}]
+2021-07-22 13:48:48,099:INFO:se encontro el product.product -> [{'id': 15316, 'default_code': '00005', 'name': 'VC-Producto 5', 'categ_id': [1, 'All'], 'price': 0.0}]
+2021-07-22 13:48:48,099:INFO:{'operation_number': 7167, 'company': 1, 'policy': 7167, 'transaction_datetime': '2021-07-22 13:48:48.099679', 'store': 7167, 'pos': 7167, 'store_description': 'Caja 3 Local 1 FRACCION', 'invoice': 7167, 'client_rut': '212121-9', 'client_sequence': 1003, 'beneficiary_rut': '212121-9', 'doctor_rut': '212121-9', 'details': [{'pclass': 'Medicamentos / Sistema Sanguíneo', 'name': 'Artesol 50mg x 30 comprimidos', 'sku': '1201', 'quantity': 12, 'price': 0.0, 'bonus': 10, 'deductible': 10, 'copay': 10}, {'pclass': 'All / Cosmético', 'name': 'VC-Producto 1', 'sku': '00001', 'quantity': 2, 'price': 0.0, 'bonus': 10, 'deductible': 10, 'copay': 10}, {'pclass': 'All', 'name': 'VC-Producto 2', 'sku': '00002', 'quantity': 1, 'price': 0.0, 'bonus': 10, 'deductible': 10, 'copay': 10}, {'pclass': 'All', 'name': 'VC-Producto 5', 'sku': '00005', 'quantity': 3, 'price': 0.0, 'bonus': 10, 'deductible': 10, 'copay': 10}]}
+2021-07-22 13:48:48,111:DEBUG:Starting new HTTPS connection (1): fracciondte.brazilsouth.cloudapp.azure.com:443
+2021-07-22 13:48:48,677:DEBUG:https://fracciondte.brazilsouth.cloudapp.azure.com:443 "POST /auth/token/ HTTP/1.1" 200 177
+2021-07-22 13:48:48,688:DEBUG:Starting new HTTP connection (1): fracciondte.brazilsouth.cloudapp.azure.com:80
+2021-07-22 13:48:50,627:DEBUG:http://fracciondte.brazilsouth.cloudapp.azure.com:80 "POST /sermecoop/authorize/ HTTP/1.1" 200 300
+2021-07-22 13:48:50,628:INFO:authorize nos retorna {'sales_id': 376278130, 'query_id': 1567657, 'error_code': '00', 'error_description': '000000000000000000000000000Autorizado OK', 'beneficiary_birthday': '19570108', 'beneficiary_gender': 'M', 'bonus_items': {'pclass': 'BG', 'bonus_percent': 90, 'bonus_max': 0, 'deductible': 0}, 'event_max': 1390041, 'event_deductible': 0}
+2021-07-22 13:48:50,637:DEBUG:Starting new HTTP connection (1): fracciondte.brazilsouth.cloudapp.azure.com:80
+2021-07-22 13:48:52,469:DEBUG:http://fracciondte.brazilsouth.cloudapp.azure.com:80 "POST /sermecoop/confirmation/ HTTP/1.1" 200 145
+2021-07-22 13:48:52,471:INFO:se obtuvo -> 29677704
+2021-07-22 13:48:52,479:DEBUG:Starting new HTTP connection (1): fracciondte.brazilsouth.cloudapp.azure.com:80
+2021-07-22 13:48:54,342:DEBUG:http://fracciondte.brazilsouth.cloudapp.azure.com:80 "POST /sermecoop/nullify/ HTTP/1.1" 200 111
+2021-07-22 13:48:54,345:INFO:127.0.0.1 - - [22/Jul/2021 13:48:54] "POST /sermecoop/authorize HTTP/1.1" 200 -
+2021-07-22 13:53:21,368:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/models/sale_sermecoop/resources.py', reloading
+2021-07-22 13:53:21,495:INFO: * Restarting with stat
+2021-07-22 13:53:22,787:WARNING: * Debugger is active!
+2021-07-22 13:53:22,788:INFO: * Debugger PIN: 526-839-953
+2021-07-22 13:54:23,544:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/models/sale_sermecoop/resources.py', reloading
+2021-07-22 13:54:23,678:INFO: * Restarting with stat
+2021-07-22 13:54:24,694:WARNING: * Debugger is active!
+2021-07-22 13:54:24,697:INFO: * Debugger PIN: 526-839-953
+2021-07-22 13:57:27,570:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/models/sale_sermecoop/resources.py', reloading
+2021-07-22 13:57:27,655:INFO: * Restarting with stat
+2021-07-22 13:57:28,626:WARNING: * Debugger is active!
+2021-07-22 13:57:28,628:INFO: * Debugger PIN: 526-839-953
+2021-07-22 14:18:35,449:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/models/sale_sermecoop/resources.py', reloading
+2021-07-22 14:18:35,596:INFO: * Restarting with stat
+2021-07-22 14:18:36,599:WARNING: * Debugger is active!
+2021-07-22 14:18:36,604:INFO: * Debugger PIN: 526-839-953
+2021-07-22 14:18:52,799:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/api.py', reloading
+2021-07-22 14:18:52,918:INFO: * Restarting with stat
+2021-07-22 14:18:53,459:WARNING: * Debugger is active!
+2021-07-22 14:18:53,464:INFO: * Debugger PIN: 526-839-953
+2021-07-22 14:18:57,995:INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-07-22 14:18:58,000:INFO: * Restarting with stat
+2021-07-22 14:18:58,947:WARNING: * Debugger is active!
+2021-07-22 14:18:58,950:INFO: * Debugger PIN: 526-839-953
+2021-07-22 14:19:02,143:INFO: vista : /sermecoop/authorize
+2021-07-22 14:19:03,254:INFO:se encontro a partir de Sale order list [{'id': 7167, 'name': 'SO7209', 'company_id': [1, 'Fracción SpA'], 'partner_id': [12241, 'Don Amar']}]
+2021-07-22 14:19:04,308:INFO:se encontro a partir de partner [{'id': 12241, 'rut': '212121-9'}]
+2021-07-22 14:19:05,353:INFO:se encontro a partir de sale order line [{'id': 17060, 'product_id': [6572, '[1201] Artesol 50mg x 30 comprimidos'], 'product_uom_qty': 12.0}, {'id': 17063, 'product_id': [15313, '[00001] VC-Producto 1'], 'product_uom_qty': 2.0}, {'id': 17064, 'product_id': [15314, '[00002] VC-Producto 2'], 'product_uom_qty': 1.0}, {'id': 17065, 'product_id': [15316, '[00005] VC-Producto 5'], 'product_uom_qty': 3.0}]
+2021-07-22 14:19:06,357:INFO:se encontro el product.product -> [{'id': 6572, 'default_code': '1201', 'name': 'Artesol 50mg x 30 comprimidos', 'categ_id': [68, 'Medicamentos / Sistema Sanguíneo'], 'price': 0.0}]
+2021-07-22 14:19:39,001:INFO:se encontro el product.product -> [{'id': 15313, 'default_code': '00001', 'name': 'VC-Producto 1', 'categ_id': [10, 'All / Cosmético'], 'price': 0.0}]
+2021-07-22 14:19:40,055:INFO:se encontro el product.product -> [{'id': 15314, 'default_code': '00002', 'name': 'VC-Producto 2', 'categ_id': [1, 'All'], 'price': 0.0}]
+2021-07-22 14:19:41,034:INFO:se encontro el product.product -> [{'id': 15316, 'default_code': '00005', 'name': 'VC-Producto 5', 'categ_id': [1, 'All'], 'price': 0.0}]
+2021-07-22 14:19:41,034:INFO:{'operation_number': 7167, 'company': 1, 'policy': 7167, 'transaction_datetime': '2021-07-22 14:19:41.034377', 'store': 7167, 'pos': 7167, 'store_description': 'Caja 3 Local 1 FRACCION', 'invoice': 7167, 'client_rut': '212121-9', 'client_sequence': 1003, 'beneficiary_rut': '212121-9', 'doctor_rut': '212121-9', 'details': [{'pclass': 'Medicamentos / Sistema Sanguíneo', 'name': 'Artesol 50mg x 30 comprimidos', 'sku': '1201', 'quantity': 12, 'price': 0.0, 'bonus': 10, 'deductible': 10, 'copay': 10}, {'pclass': 'All / Cosmético', 'name': 'VC-Producto 1', 'sku': '00001', 'quantity': 2, 'price': 0.0, 'bonus': 10, 'deductible': 10, 'copay': 10}, {'pclass': 'All', 'name': 'VC-Producto 2', 'sku': '00002', 'quantity': 1, 'price': 0.0, 'bonus': 10, 'deductible': 10, 'copay': 10}, {'pclass': 'All', 'name': 'VC-Producto 5', 'sku': '00005', 'quantity': 3, 'price': 0.0, 'bonus': 10, 'deductible': 10, 'copay': 10}]}
+2021-07-22 14:19:41,054:DEBUG:Starting new HTTPS connection (1): fracciondte.brazilsouth.cloudapp.azure.com:443
+2021-07-22 14:19:41,633:DEBUG:https://fracciondte.brazilsouth.cloudapp.azure.com:443 "POST /auth/token/ HTTP/1.1" 200 177
+2021-07-22 14:19:41,644:DEBUG:Starting new HTTP connection (1): fracciondte.brazilsouth.cloudapp.azure.com:80
+2021-07-22 14:19:43,903:DEBUG:http://fracciondte.brazilsouth.cloudapp.azure.com:80 "POST /sermecoop/authorize/ HTTP/1.1" 200 300
+2021-07-22 14:19:43,904:INFO:authorize nos retorna {'sales_id': 376278130, 'query_id': 1567657, 'error_code': '00', 'error_description': '000000000000000000000000000Autorizado OK', 'beneficiary_birthday': '19570108', 'beneficiary_gender': 'M', 'bonus_items': {'pclass': 'BG', 'bonus_percent': 90, 'bonus_max': 0, 'deductible': 0}, 'event_max': 1390041, 'event_deductible': 0}
+2021-07-22 14:19:43,916:DEBUG:Starting new HTTP connection (1): fracciondte.brazilsouth.cloudapp.azure.com:80
+2021-07-22 14:19:45,780:DEBUG:http://fracciondte.brazilsouth.cloudapp.azure.com:80 "POST /sermecoop/confirmation/ HTTP/1.1" 200 145
+2021-07-22 14:19:45,781:INFO:se obtuvo -> 29677704
+2021-07-22 14:19:45,787:DEBUG:Starting new HTTP connection (1): fracciondte.brazilsouth.cloudapp.azure.com:80
+2021-07-22 14:19:47,619:DEBUG:http://fracciondte.brazilsouth.cloudapp.azure.com:80 "POST /sermecoop/nullify/ HTTP/1.1" 200 111
+2021-07-22 14:19:47,622:INFO:127.0.0.1 - - [22/Jul/2021 14:19:47] "POST /sermecoop/authorize HTTP/1.1" 200 -
+2021-07-22 15:31:28,646:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/api.py', reloading
+2021-07-22 15:31:28,793:INFO: * Restarting with stat
+2021-07-22 15:32:07,394:INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-07-22 15:32:07,398:INFO: * Restarting with stat
+2021-07-22 15:32:08,049:WARNING: * Debugger is active!
+2021-07-22 15:32:08,052:INFO: * Debugger PIN: 526-839-953
+2021-07-22 15:32:12,215:INFO: vista : /sermecoop/authorize
+2021-07-22 15:32:13,540:INFO:se encontro a partir de Sale order list [{'id': 7167, 'name': 'SO7209', 'company_id': [1, 'Fracción SpA'], 'partner_id': [12241, 'Don Amar']}]
+2021-07-22 15:32:14,801:INFO:se encontro a partir de partner [{'id': 12241, 'rut': '212121-9'}]
+2021-07-22 15:32:16,093:INFO:se encontro a partir de sale order line [{'id': 17060, 'product_id': [6572, '[1201] Artesol 50mg x 30 comprimidos'], 'product_uom_qty': 12.0}, {'id': 17063, 'product_id': [15313, '[00001] VC-Producto 1'], 'product_uom_qty': 2.0}, {'id': 17064, 'product_id': [15314, '[00002] VC-Producto 2'], 'product_uom_qty': 1.0}, {'id': 17065, 'product_id': [15316, '[00005] VC-Producto 5'], 'product_uom_qty': 3.0}]
+2021-07-22 15:32:17,336:INFO:se encontro el product.product -> [{'id': 6572, 'default_code': '1201', 'name': 'Artesol 50mg x 30 comprimidos', 'categ_id': [68, 'Medicamentos / Sistema Sanguíneo'], 'price': 0.0}]
+2021-07-22 15:32:18,562:INFO:se encontro el product.product -> [{'id': 15313, 'default_code': '00001', 'name': 'VC-Producto 1', 'categ_id': [10, 'All / Cosmético'], 'price': 0.0}]
+2021-07-22 15:32:19,823:INFO:se encontro el product.product -> [{'id': 15314, 'default_code': '00002', 'name': 'VC-Producto 2', 'categ_id': [1, 'All'], 'price': 0.0}]
+2021-07-22 15:32:21,058:INFO:se encontro el product.product -> [{'id': 15316, 'default_code': '00005', 'name': 'VC-Producto 5', 'categ_id': [1, 'All'], 'price': 0.0}]
+2021-07-22 15:32:21,058:INFO:{'operation_number': 7167, 'company': 1, 'policy': 7167, 'transaction_datetime': '2021-07-22 15:32:21.058374', 'store': 7167, 'pos': 7167, 'store_description': 'Caja 3 Local 1 FRACCION', 'invoice': 7167, 'client_rut': '212121-9', 'client_sequence': 1003, 'beneficiary_rut': '212121-9', 'doctor_rut': '212121-9', 'details': [{'pclass': 'Medicamentos / Sistema Sanguíneo', 'name': 'Artesol 50mg x 30 comprimidos', 'sku': '1201', 'quantity': 12, 'price': 0.0, 'bonus': 10, 'deductible': 10, 'copay': 10}, {'pclass': 'All / Cosmético', 'name': 'VC-Producto 1', 'sku': '00001', 'quantity': 2, 'price': 0.0, 'bonus': 10, 'deductible': 10, 'copay': 10}, {'pclass': 'All', 'name': 'VC-Producto 2', 'sku': '00002', 'quantity': 1, 'price': 0.0, 'bonus': 10, 'deductible': 10, 'copay': 10}, {'pclass': 'All', 'name': 'VC-Producto 5', 'sku': '00005', 'quantity': 3, 'price': 0.0, 'bonus': 10, 'deductible': 10, 'copay': 10}]}
+2021-07-22 15:32:21,074:DEBUG:Starting new HTTPS connection (1): fracciondte.brazilsouth.cloudapp.azure.com:443
+2021-07-22 15:32:21,703:DEBUG:https://fracciondte.brazilsouth.cloudapp.azure.com:443 "POST /auth/token/ HTTP/1.1" 200 177
+2021-07-22 15:32:21,715:DEBUG:Starting new HTTP connection (1): fracciondte.brazilsouth.cloudapp.azure.com:80
+2021-07-22 15:32:23,660:DEBUG:http://fracciondte.brazilsouth.cloudapp.azure.com:80 "POST /sermecoop/authorize/ HTTP/1.1" 200 300
+2021-07-22 15:32:23,661:INFO:authorize nos retorna {'sales_id': 376278130, 'query_id': 1567657, 'error_code': '00', 'error_description': '000000000000000000000000000Autorizado OK', 'beneficiary_birthday': '19570108', 'beneficiary_gender': 'M', 'bonus_items': {'pclass': 'BG', 'bonus_percent': 90, 'bonus_max': 0, 'deductible': 0}, 'event_max': 1390041, 'event_deductible': 0}
+2021-07-22 15:32:23,674:DEBUG:Starting new HTTP connection (1): fracciondte.brazilsouth.cloudapp.azure.com:80
+2021-07-22 15:32:25,431:DEBUG:http://fracciondte.brazilsouth.cloudapp.azure.com:80 "POST /sermecoop/confirmation/ HTTP/1.1" 200 145
+2021-07-22 15:32:25,432:INFO:se obtuvo -> 29677704
+2021-07-22 15:32:25,449:DEBUG:Starting new HTTP connection (1): fracciondte.brazilsouth.cloudapp.azure.com:80
+2021-07-22 15:32:27,460:DEBUG:http://fracciondte.brazilsouth.cloudapp.azure.com:80 "POST /sermecoop/nullify/ HTTP/1.1" 200 111
+2021-07-22 15:32:27,463:INFO:127.0.0.1 - - [22/Jul/2021 15:32:27] "POST /sermecoop/authorize HTTP/1.1" 200 -
+2021-07-22 15:40:43,382:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/api.py', reloading
+2021-07-22 15:40:43,499:INFO: * Restarting with stat
+2021-07-22 15:40:44,165:WARNING: * Debugger is active!
+2021-07-22 15:40:44,167:INFO: * Debugger PIN: 526-839-953
+2021-07-22 16:31:56,901:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/api.py', reloading
+2021-07-22 16:31:57,127:INFO: * Restarting with stat
+2021-07-22 16:31:58,384:WARNING: * Debugger is active!
+2021-07-22 16:31:58,386:INFO: * Debugger PIN: 526-839-953
+2021-07-22 17:19:17,932:INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-07-22 17:19:17,940:INFO: * Restarting with stat
+2021-07-22 17:19:18,495:WARNING: * Debugger is active!
+2021-07-22 17:19:18,627:INFO: * Debugger PIN: 138-465-909
+2021-07-22 17:28:38,200:INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-07-22 17:28:38,204:INFO: * Restarting with stat
+2021-07-22 17:28:38,708:WARNING: * Debugger is active!
+2021-07-22 17:28:38,710:INFO: * Debugger PIN: 138-465-909
+2021-07-22 17:29:12,990:INFO:127.0.0.1 - - [22/Jul/2021 17:29:12] "[33mGET /?vscodeBrowserReqId=1626989352572 HTTP/1.1[0m" 404 -
+2021-07-22 17:29:33,071:INFO:127.0.0.1 - - [22/Jul/2021 17:29:33] "[33mGET / HTTP/1.1[0m" 404 -
+2021-07-22 17:29:33,168:INFO:127.0.0.1 - - [22/Jul/2021 17:29:33] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2021-07-22 17:30:50,892:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/api.py', reloading
+2021-07-22 17:30:50,959:INFO: * Restarting with stat
+2021-07-22 17:30:51,474:WARNING: * Debugger is active!
+2021-07-22 17:30:51,477:INFO: * Debugger PIN: 138-465-909
+2021-07-22 17:30:57,621:INFO: * Running on http://127.0.0.1:5001/ (Press CTRL+C to quit)
+2021-07-22 17:30:57,625:INFO: * Restarting with stat
+2021-07-22 17:30:58,118:WARNING: * Debugger is active!
+2021-07-22 17:30:58,120:INFO: * Debugger PIN: 138-465-909
+2021-07-22 17:32:56,337:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/api.py', reloading
+2021-07-22 17:32:56,476:INFO: * Restarting with stat
+2021-07-22 17:32:57,161:WARNING: * Debugger is active!
+2021-07-22 17:32:57,164:INFO: * Debugger PIN: 138-465-909
+2021-07-22 17:33:03,246:INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-07-22 17:33:03,250:INFO: * Restarting with stat
+2021-07-22 17:33:04,010:WARNING: * Debugger is active!
+2021-07-22 17:33:04,014:INFO: * Debugger PIN: 138-465-909
+2021-07-22 17:33:11,486:INFO: vista : /sermecoop/authorize
+2021-07-22 17:33:12,892:INFO:se encontro a partir de Sale order list [{'id': 7167, 'name': 'SO7209', 'company_id': [1, 'Fracción SpA'], 'partner_id': [12241, 'Don Amar']}]
+2021-07-22 17:33:14,194:INFO:se encontro a partir de partner [{'id': 12241, 'rut': '212121-9'}]
+2021-07-22 17:33:15,531:INFO:se encontro a partir de sale order line [{'id': 17060, 'product_id': [6572, '[1201] Artesol 50mg x 30 comprimidos'], 'product_uom_qty': 12.0}, {'id': 17063, 'product_id': [15313, '[00001] VC-Producto 1'], 'product_uom_qty': 2.0}, {'id': 17064, 'product_id': [15314, '[00002] VC-Producto 2'], 'product_uom_qty': 1.0}, {'id': 17065, 'product_id': [15316, '[00005] VC-Producto 5'], 'product_uom_qty': 3.0}]
+2021-07-22 17:33:16,771:INFO:se encontro el product.product -> [{'id': 6572, 'default_code': '1201', 'name': 'Artesol 50mg x 30 comprimidos', 'categ_id': [68, 'Medicamentos / Sistema Sanguíneo'], 'price': 0.0}]
+2021-07-22 17:33:17,996:INFO:se encontro el product.product -> [{'id': 15313, 'default_code': '00001', 'name': 'VC-Producto 1', 'categ_id': [10, 'All / Cosmético'], 'price': 0.0}]
+2021-07-22 17:33:19,253:INFO:se encontro el product.product -> [{'id': 15314, 'default_code': '00002', 'name': 'VC-Producto 2', 'categ_id': [1, 'All'], 'price': 0.0}]
+2021-07-22 17:33:20,563:INFO:se encontro el product.product -> [{'id': 15316, 'default_code': '00005', 'name': 'VC-Producto 5', 'categ_id': [1, 'All'], 'price': 0.0}]
+2021-07-22 17:33:20,564:INFO:{'operation_number': 7167, 'company': 1, 'policy': 7167, 'transaction_datetime': '2021-07-22 17:33:20.564500', 'store': 7167, 'pos': 7167, 'store_description': 'Caja 3 Local 1 FRACCION', 'invoice': 7167, 'client_rut': '212121-9', 'client_sequence': 1003, 'beneficiary_rut': '212121-9', 'doctor_rut': '212121-9', 'details': [{'pclass': 'Medicamentos / Sistema Sanguíneo', 'name': 'Artesol 50mg x 30 comprimidos', 'sku': '1201', 'quantity': 12, 'price': 0.0, 'bonus': 10, 'deductible': 10, 'copay': 10}, {'pclass': 'All / Cosmético', 'name': 'VC-Producto 1', 'sku': '00001', 'quantity': 2, 'price': 0.0, 'bonus': 10, 'deductible': 10, 'copay': 10}, {'pclass': 'All', 'name': 'VC-Producto 2', 'sku': '00002', 'quantity': 1, 'price': 0.0, 'bonus': 10, 'deductible': 10, 'copay': 10}, {'pclass': 'All', 'name': 'VC-Producto 5', 'sku': '00005', 'quantity': 3, 'price': 0.0, 'bonus': 10, 'deductible': 10, 'copay': 10}]}
+2021-07-22 17:33:20,580:DEBUG:Starting new HTTPS connection (1): fracciondte.brazilsouth.cloudapp.azure.com:443
+2021-07-22 17:33:21,210:DEBUG:https://fracciondte.brazilsouth.cloudapp.azure.com:443 "POST /auth/token/ HTTP/1.1" 200 177
+2021-07-22 17:33:21,220:DEBUG:Starting new HTTP connection (1): fracciondte.brazilsouth.cloudapp.azure.com:80
+2021-07-22 17:33:23,493:DEBUG:http://fracciondte.brazilsouth.cloudapp.azure.com:80 "POST /sermecoop/authorize/ HTTP/1.1" 200 300
+2021-07-22 17:33:23,495:INFO:authorize nos retorna {'sales_id': 376278130, 'query_id': 1567657, 'error_code': '00', 'error_description': '000000000000000000000000000Autorizado OK', 'beneficiary_birthday': '19570108', 'beneficiary_gender': 'M', 'bonus_items': {'pclass': 'BG', 'bonus_percent': 90, 'bonus_max': 0, 'deductible': 0}, 'event_max': 1390041, 'event_deductible': 0}
+2021-07-22 17:33:23,506:DEBUG:Starting new HTTP connection (1): fracciondte.brazilsouth.cloudapp.azure.com:80
+2021-07-22 17:33:25,355:DEBUG:http://fracciondte.brazilsouth.cloudapp.azure.com:80 "POST /sermecoop/confirmation/ HTTP/1.1" 200 145
+2021-07-22 17:33:25,358:INFO:se obtuvo -> 29677704
+2021-07-22 17:33:25,365:DEBUG:Starting new HTTP connection (1): fracciondte.brazilsouth.cloudapp.azure.com:80
+2021-07-22 17:33:27,123:DEBUG:http://fracciondte.brazilsouth.cloudapp.azure.com:80 "POST /sermecoop/nullify/ HTTP/1.1" 200 111
+2021-07-22 17:33:27,128:INFO:127.0.0.1 - - [22/Jul/2021 17:33:27] "POST /sermecoop/authorize HTTP/1.1" 200 -

@@ -308,55 +308,63 @@ def srmc_authorize():
     })
     
     logging.info(productdata)
-    url = 'https://fracciondte.brazilsouth.cloudapp.azure.com/auth/token/'
-    payload = {"username": "fraccion_erp_test","password": "erp.test"}
+    # url = 'https://fracciondte.brazilsouth.cloudapp.azure.com/auth/token/'
+    # payload = {"username": "fraccion_erp_test","password": "erp.test"}
     
-    response = requests.post(url, json=payload)
-    
+    # response = requests.post(url, json=payload)
+    response = rs_sale_sermecoop.tokenSermecoop.get_token()
     #obtenemos el token
     
     if response.status_code == 200:
-        val = response.json()
-        logging.info(f'El token obtenido es {val["access_token"]}')
-        url = 'http://fracciondte.brazilsouth.cloudapp.azure.com/sermecoop/authorize/'
+        auth_data_token = response.json()
+        # logging.info(f'El token obtenido es {val["access_token"]}')
+        # url = 'http://fracciondte.brazilsouth.cloudapp.azure.com/sermecoop/authorize/'
 
-        header = {'Authorization': 'Bearer ' + val["access_token"]}
-        #usamos el token
+        #header = {'Authorization': 'Bearer ' + auth_data_token["access_token"]}
+        # #usamos el token
 
-        response2 = requests.post(url, json=productdata, headers=header)
+        # response2 = requests.post(url, json=productdata, headers=header)
+
+        response2 = rs_sale_sermecoop.sermecoopAuthorize.get_authorize(auth_data_token,productdata)
 
         ##----------------------------
-        val2=response2.json()
-        logging.info(f'authorize nos retorna {val2}')
+        auth_data=response2.json()
+        logging.info(f'authorize nos retorna {auth_data}')
         #hacemos la consulta a authorize para obtener el query_id
-        venta_data =  ({
-        "query_id":val2["query_id"],
-        "status":1,
-        "doctor_name":"Mauricio Fernandez",
-        "operation_number": result[0]["id"],
-        "company": result[0]["company_id"][0],
-        "policy": result[0]["id"],
-        "transaction_datetime": str(datetime.datetime.now()),
-        "store": result[0]["id"],
-        "pos": result[0]["id"],
-        "store_description": "Caja 3 Local 1 FRACCION",
-        "invoice": result[0]["id"],
-        "client_rut": partner[0]["rut"],
-        "client_sequence": 1003,
-        "beneficiary_rut": partner[0]["rut"],
-        "doctor_rut": partner[0]["rut"],
-        "details" : details
-    })
-        url = 'http://fracciondte.brazilsouth.cloudapp.azure.com/sermecoop/confirmation/'
-        #otra vez hacemos la consulta ahora para obtner el bond_id que necesitamos para el nullify
-        response3 = requests.post(url,json=venta_data, headers=header)
+
+        productdata["query_id"] = auth_data["query_id"]
+        productdata["status"] = 1
+        productdata["doctor_name"] = "Mauricio Fernandez"
+        # venta_data =  ({
+        # "query_id":auth_data["query_id"],
+        # "status":1,
+        # "doctor_name":"Mauricio Fernandez",
+        # "operation_number": result[0]["id"],
+        # "company": result[0]["company_id"][0],
+        # "policy": result[0]["id"],
+        # "transaction_datetime": str(datetime.datetime.now()),
+        # "store": result[0]["id"],
+        # "pos": result[0]["id"],
+        # "store_description": "Caja 3 Local 1 FRACCION",
+        # "invoice": result[0]["id"],
+        # "client_rut": partner[0]["rut"],
+        # "client_sequence": 1003,
+        # "beneficiary_rut": partner[0]["rut"],
+        # "doctor_rut": partner[0]["rut"],
+        # "details" : details
+        #})
+        # url = 'http://fracciondte.brazilsouth.cloudapp.azure.com/sermecoop/confirmation/'
+        # #otra vez hacemos la consulta ahora para obtner el bond_id que necesitamos para el nullify
+        # response3 = requests.post(url,json=venta_data, headers=header)
+        response3 = rs_sale_sermecoop.sermecoopConfirm.confirmation(auth_data_token,productdata)
+        
         bondid = response3.json()["bond_id"]
         logging.info(f'se obtuvo -> {bondid}')
 
         datafornullify = ({"operation_number": result[0]["id"], "bond_id":bondid})
-
-        url = "http://fracciondte.brazilsouth.cloudapp.azure.com/sermecoop/nullify/"
-        response4 = requests.post(url,json=datafornullify, headers=header)
+        response4 = rs_sale_sermecoop.sermecoopNullify.nullify(auth_data_token,datafornullify)
+        #url = "http://fracciondte.brazilsouth.cloudapp.azure.com/sermecoop/nullify/"
+        #response4 = requests.post(url,json=datafornullify, headers=header)
         return (response4.json())
         
 
