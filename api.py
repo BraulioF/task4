@@ -125,15 +125,38 @@ def sale_create():
             if(len(product)== 0):
                 logging.error(f'No existe el producto') 
                 return"No existe ese Producto"       
-            else:
-                order = data["venta"] 
-                order_id = rs_sale.SaleOrderCreate.post(order,partner_id,team_id)
-                logging.info(f'orden creada {order_id}') 
-                order_line = data["producto"]               
-                rs_sale_line.SaleOrderLineCreate.post(order_line,order_id)
-                logging.info(f'line agregada a la orden') 
+            
+            #receta = rs_recipe.RecipeList.get_id()
+            order = data["venta"] 
+            order_id = rs_sale.SaleOrderCreate.post(order,partner_id,team_id)
+            logging.info(f'orden creada {order_id}') 
+            order_line = data["producto"]               
+            rs_sale_line.SaleOrderLineCreate.post(order_line,order_id)
+            logging.info(f'line agregada a la orden') 
             
             return jsonify({"creado":order_line})
+#_______________________________________________________________________----________________________________________________
+##GET PRODUCT
+@app.route("/prueba", methods=["GET"])
+def get_it_receta():
+    logging.info("Vista --> /product/get")
+    data = request.get_json()
+    id = data["id"]
+    receta = rs_recipe.RecipeList.get_id(id)
+    if(len(receta) == 0):
+        logging.error("Error : no existe un producto con ese defaultcode")
+        return jsonify({"Error" : "No existe una receta con esa id"})
+    lines = []
+    for i in range(len(receta[0]["recipe_line_id"])):
+        data["default_code"] = receta[0]["recipe_line_id"][i]
+        print(data["default_code"])
+        #prod = rs_product_template.ProductList.get_default_code(data)
+        prod = rs_recipe_line.RecipeLinesList.get_lines_id(receta[0]["recipe_line_id"][i])
+        lines.append(prod)
+        #print(prod)
+    receta[0]["lines"] = lines
+    logging.info(f'producto encontrado {receta}')
+    return jsonify({"producto encontrado ": receta})
 
 ##GET PRODUCT
 @app.route("/product/get", methods=["GET"])
@@ -308,8 +331,6 @@ def srmc_authorize():
     })
     
     logging.info(productdata)
-    # url = 'https://fracciondte.brazilsouth.cloudapp.azure.com/auth/token/'
-    # payload = {"username": "fraccion_erp_test","password": "erp.test"}
     
     # response = requests.post(url, json=payload)
     response = rs_sale_sermecoop.tokenSermecoop.get_token()
@@ -317,13 +338,6 @@ def srmc_authorize():
     
     if response.status_code == 200:
         auth_data_token = response.json()
-        # logging.info(f'El token obtenido es {val["access_token"]}')
-        # url = 'http://fracciondte.brazilsouth.cloudapp.azure.com/sermecoop/authorize/'
-
-        #header = {'Authorization': 'Bearer ' + auth_data_token["access_token"]}
-        # #usamos el token
-
-        # response2 = requests.post(url, json=productdata, headers=header)
 
         response2 = rs_sale_sermecoop.sermecoopAuthorize.get_authorize(auth_data_token,productdata)
 
@@ -335,27 +349,7 @@ def srmc_authorize():
         productdata["query_id"] = auth_data["query_id"]
         productdata["status"] = 1
         productdata["doctor_name"] = "Mauricio Fernandez"
-        # venta_data =  ({
-        # "query_id":auth_data["query_id"],
-        # "status":1,
-        # "doctor_name":"Mauricio Fernandez",
-        # "operation_number": result[0]["id"],
-        # "company": result[0]["company_id"][0],
-        # "policy": result[0]["id"],
-        # "transaction_datetime": str(datetime.datetime.now()),
-        # "store": result[0]["id"],
-        # "pos": result[0]["id"],
-        # "store_description": "Caja 3 Local 1 FRACCION",
-        # "invoice": result[0]["id"],
-        # "client_rut": partner[0]["rut"],
-        # "client_sequence": 1003,
-        # "beneficiary_rut": partner[0]["rut"],
-        # "doctor_rut": partner[0]["rut"],
-        # "details" : details
-        #})
-        # url = 'http://fracciondte.brazilsouth.cloudapp.azure.com/sermecoop/confirmation/'
-        # #otra vez hacemos la consulta ahora para obtner el bond_id que necesitamos para el nullify
-        # response3 = requests.post(url,json=venta_data, headers=header)
+    
         response3 = rs_sale_sermecoop.sermecoopConfirm.confirmation(auth_data_token,productdata)
         
         bondid = response3.json()["bond_id"]
@@ -363,8 +357,7 @@ def srmc_authorize():
 
         datafornullify = ({"operation_number": result[0]["id"], "bond_id":bondid})
         response4 = rs_sale_sermecoop.sermecoopNullify.nullify(auth_data_token,datafornullify)
-        #url = "http://fracciondte.brazilsouth.cloudapp.azure.com/sermecoop/nullify/"
-        #response4 = requests.post(url,json=datafornullify, headers=header)
+        
         return (response4.json())
         
 
