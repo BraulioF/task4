@@ -4,14 +4,14 @@ from ..auth import odoo
 class ProductList():
     """get list product"""
 
-    def get_default_code(product):
+    def get_default_code(default_code):
         """get product by default_code"""
         
         odoo_client = odoo.OdooClient()
         uid, models = odoo_client.logging()
         default_code = models.execute_kw(odoo_client.db, uid, odoo_client.password,
                         'product.template', 'search_read',
-            [[['default_code', '=', product["default_code"]]]],
+            [[['default_code', '=',default_code]]],
             { 'fields': ['default_code','id'] ,'limit': 1})
         return default_code
     

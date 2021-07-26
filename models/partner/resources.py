@@ -5,12 +5,12 @@ from ..auth import odoo
 class ResPartnerList():
     """Odoo model: res.partner list for customer and company"""
 
-    def get_rut(data):
+    def get_rut(rut):
         """get one parnter for rut"""
 
         odoo_client = odoo.OdooClient()
         uid, models = odoo_client.logging()
-        rut = data["rut"]
+        #rut = data["rut"]
 
         partner = models.execute_kw(odoo_client.db, uid, odoo_client.password,
             'res.partner', 'search_read',
@@ -49,6 +49,25 @@ class ResPartnerCreate():
             'comment' : data["comment"],
             'phone' : data["phone"],
             'email' : data["email"]
+            }])
+        #name = models.execute_kw(odoo_client.db, uid, odoo_client.password, 'res.partner', 'name_get', [[partnerid]])
+        return partnerid
+    
+
+    def post_client(data):
+        """post partner"""
+
+        odoo_client = odoo.OdooClient()
+        uid, models = odoo_client.logging()
+        partnerid = models.execute_kw(odoo_client.db, uid, odoo_client.password, 'res.partner', 'create', 
+            [{ 
+            'name': data["cliente_nombre"],
+            'rut' : data["cliente_rut"],
+            'street' : data["cliente_direccion"],
+            'city' : data["cliente_comuna"],
+            'phone' : data["cliente_telefono"],
+            'country_id' : data["cliente_pais"],
+            'is_company' : data["is_company"]
             }])
         #name = models.execute_kw(odoo_client.db, uid, odoo_client.password, 'res.partner', 'name_get', [[partnerid]])
         return partnerid

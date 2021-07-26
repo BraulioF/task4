@@ -9,3 +9,5 @@ from .product_categoria import resources as rs_product_categ
 from .uom import resources as rs_uom
 from .product_template import resource as rs_product_template
 from .sale_sermecoop import resources as rs_sale_sermecoop
+from .recipe import resources as rs_recipe
+from .recipe_line import resources as rs_recipe_line

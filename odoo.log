@@ -240,3 +240,598 @@
 2021-07-22 17:33:25,365:DEBUG:Starting new HTTP connection (1): fracciondte.brazilsouth.cloudapp.azure.com:80
 2021-07-22 17:33:27,123:DEBUG:http://fracciondte.brazilsouth.cloudapp.azure.com:80 "POST /sermecoop/nullify/ HTTP/1.1" 200 111
 2021-07-22 17:33:27,128:INFO:127.0.0.1 - - [22/Jul/2021 17:33:27] "POST /sermecoop/authorize HTTP/1.1" 200 -
+2021-07-23 12:52:05,540:INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-07-23 12:52:05,548:INFO: * Restarting with stat
+2021-07-23 12:52:06,141:WARNING: * Debugger is active!
+2021-07-23 12:52:06,261:INFO: * Debugger PIN: 762-867-680
+2021-07-23 12:52:57,510:INFO:Vista = /partner/get
+2021-07-23 12:52:57,511:INFO:Se obtuvo {'cliente': {'rut': '212121-9'}}
+2021-07-23 12:52:58,619:INFO:Se retorno [{'id': 12241, 'name': 'Don Amar', 'phone': '555666777888', 'email': 'donAmar@gmail.com', 'rut': '212121-9'}]
+2021-07-23 12:52:58,622:INFO:127.0.0.1 - - [23/Jul/2021 12:52:58] "GET /partner/get HTTP/1.1" 200 -
+2021-07-23 12:53:11,956:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/api.py', reloading
+2021-07-23 12:53:12,050:INFO: * Restarting with stat
+2021-07-23 12:53:12,622:WARNING: * Debugger is active!
+2021-07-23 12:53:12,625:INFO: * Debugger PIN: 762-867-680
+2021-07-23 12:55:31,013:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/models/recipe/resources.py', reloading
+2021-07-23 12:55:31,108:INFO: * Restarting with stat
+2021-07-23 12:55:31,765:WARNING: * Debugger is active!
+2021-07-23 12:55:31,768:INFO: * Debugger PIN: 762-867-680
+2021-07-23 13:09:06,232:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/models/recipe/resources.py', reloading
+2021-07-23 13:09:06,336:INFO: * Restarting with stat
+2021-07-23 13:09:06,996:WARNING: * Debugger is active!
+2021-07-23 13:09:06,999:INFO: * Debugger PIN: 762-867-680
+2021-07-23 13:10:25,732:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/models/recipe/resources.py', reloading
+2021-07-23 13:10:25,812:INFO: * Restarting with stat
+2021-07-23 13:10:26,376:WARNING: * Debugger is active!
+2021-07-23 13:10:26,379:INFO: * Debugger PIN: 762-867-680
+2021-07-23 13:10:32,459:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/models/recipe/resources.py', reloading
+2021-07-23 13:10:32,530:INFO: * Restarting with stat
+2021-07-23 13:10:33,147:WARNING: * Debugger is active!
+2021-07-23 13:10:33,150:INFO: * Debugger PIN: 762-867-680
+2021-07-23 15:09:05,787:INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-07-23 15:09:05,792:INFO: * Restarting with stat
+2021-07-23 15:09:06,283:WARNING: * Debugger is active!
+2021-07-23 15:09:06,285:INFO: * Debugger PIN: 762-867-680
+2021-07-23 15:09:10,410:INFO:Vista --> /product/get
+2021-07-23 15:09:10,440:INFO:127.0.0.1 - - [23/Jul/2021 15:09:10] "[35m[1mGET /prueba HTTP/1.1[0m" 500 -
+2021-07-23 15:09:31,538:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/models/recipe/resources.py', reloading
+2021-07-23 15:09:31,648:INFO: * Restarting with stat
+2021-07-23 15:09:32,267:WARNING: * Debugger is active!
+2021-07-23 15:09:32,271:INFO: * Debugger PIN: 762-867-680
+2021-07-23 15:09:35,827:INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-07-23 15:09:35,831:INFO: * Restarting with stat
+2021-07-23 15:09:36,335:WARNING: * Debugger is active!
+2021-07-23 15:09:36,338:INFO: * Debugger PIN: 762-867-680
+2021-07-23 15:09:38,601:INFO:Vista --> /product/get
+2021-07-23 15:09:39,671:INFO:producto encontrado [{'id': 2434, 'img': False, 'active': True, 'create_date': '2021-07-07 15:19:44', 'prolongaldo': False, 'recipe_line_id': [1407], 'assigned': True, 'fecha_receta': '2021-07-06', 'posologia': ''}]
+2021-07-23 15:09:39,672:INFO:127.0.0.1 - - [23/Jul/2021 15:09:39] "GET /prueba HTTP/1.1" 200 -
+2021-07-23 15:18:23,155:INFO:Vista --> /product/get
+2021-07-23 15:18:24,212:INFO:producto encontrado [{'id': 24, 'img': True, 'active': True, 'create_date': '2020-07-22 20:41:13', 'prolongaldo': False, 'recipe_line_id': [], 'assigned': True, 'fecha_receta': '2020-07-22', 'posologia': ''}]
+2021-07-23 15:18:24,213:INFO:127.0.0.1 - - [23/Jul/2021 15:18:24] "GET /prueba HTTP/1.1" 200 -
+2021-07-23 15:18:32,258:INFO:Vista --> /product/get
+2021-07-23 15:18:33,330:ERROR:Error : no existe un producto con ese defaultcode
+2021-07-23 15:18:33,331:INFO:127.0.0.1 - - [23/Jul/2021 15:18:33] "GET /prueba HTTP/1.1" 200 -
+2021-07-23 15:20:41,060:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/models/recipe/resources.py', reloading
+2021-07-23 15:20:41,133:INFO: * Restarting with stat
+2021-07-23 15:20:41,793:WARNING: * Debugger is active!
+2021-07-23 15:20:41,795:INFO: * Debugger PIN: 762-867-680
+2021-07-23 15:20:44,848:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/api.py', reloading
+2021-07-23 15:20:44,919:INFO: * Restarting with stat
+2021-07-23 15:20:45,546:WARNING: * Debugger is active!
+2021-07-23 15:20:45,548:INFO: * Debugger PIN: 762-867-680
+2021-07-23 15:20:49,901:INFO:Vista --> /product/get
+2021-07-23 15:20:50,965:ERROR:Error : no existe un producto con ese defaultcode
+2021-07-23 15:20:50,968:INFO:127.0.0.1 - - [23/Jul/2021 15:20:50] "GET /prueba HTTP/1.1" 200 -
+2021-07-23 15:20:52,464:INFO:Vista --> /product/get
+2021-07-23 15:20:53,542:INFO:producto encontrado [{'id': 24, 'nombre_medico': False, 'img': True, 'active': True, 'create_date': '2020-07-22 20:41:13', 'prolongaldo': False, 'recipe_line_id': [], 'assigned': True, 'fecha_receta': '2020-07-22', 'posologia': ''}]
+2021-07-23 15:20:53,543:INFO:127.0.0.1 - - [23/Jul/2021 15:20:53] "GET /prueba HTTP/1.1" 200 -
+2021-07-23 15:22:41,852:INFO:Vista --> /product/get
+2021-07-23 15:22:42,956:INFO:producto encontrado [{'id': 2434, 'nombre_medico': False, 'img': False, 'active': True, 'create_date': '2021-07-07 15:19:44', 'prolongaldo': False, 'recipe_line_id': [1407], 'assigned': True, 'fecha_receta': '2021-07-06', 'posologia': ''}]
+2021-07-23 15:22:42,957:INFO:127.0.0.1 - - [23/Jul/2021 15:22:42] "GET /prueba HTTP/1.1" 200 -
+2021-07-23 15:26:05,481:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/api.py', reloading
+2021-07-23 15:26:05,551:INFO: * Restarting with stat
+2021-07-23 15:26:06,085:WARNING: * Debugger is active!
+2021-07-23 15:26:06,088:INFO: * Debugger PIN: 762-867-680
+2021-07-23 15:26:09,750:INFO:Vista --> /product/get
+2021-07-23 15:26:10,877:INFO:127.0.0.1 - - [23/Jul/2021 15:26:10] "[35m[1mGET /prueba HTTP/1.1[0m" 500 -
+2021-07-23 15:27:02,701:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/api.py', reloading
+2021-07-23 15:27:02,812:INFO: * Restarting with stat
+2021-07-23 15:27:04,457:WARNING: * Debugger is active!
+2021-07-23 15:27:04,461:INFO: * Debugger PIN: 762-867-680
+2021-07-23 15:27:05,009:INFO:Vista --> /product/get
+2021-07-23 15:27:06,100:INFO:127.0.0.1 - - [23/Jul/2021 15:27:06] "[35m[1mGET /prueba HTTP/1.1[0m" 500 -
+2021-07-23 15:27:44,962:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/api.py', reloading
+2021-07-23 15:27:45,032:INFO: * Restarting with stat
+2021-07-23 15:27:45,551:WARNING: * Debugger is active!
+2021-07-23 15:27:45,554:INFO: * Debugger PIN: 762-867-680
+2021-07-23 15:27:46,965:INFO:Vista --> /product/get
+2021-07-23 15:27:48,058:INFO:producto encontrado [{'id': 2434, 'nombre_medico': False, 'img': False, 'active': True, 'create_date': '2021-07-07 15:19:44', 'prolongaldo': False, 'recipe_line_id': [1407], 'assigned': True, 'fecha_receta': '2021-07-06', 'posologia': ''}]
+2021-07-23 15:27:48,060:INFO:127.0.0.1 - - [23/Jul/2021 15:27:48] "GET /prueba HTTP/1.1" 200 -
+2021-07-23 15:28:15,857:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/api.py', reloading
+2021-07-23 15:28:15,928:INFO: * Restarting with stat
+2021-07-23 15:28:16,453:WARNING: * Debugger is active!
+2021-07-23 15:28:16,456:INFO: * Debugger PIN: 762-867-680
+2021-07-23 15:28:20,368:INFO:Vista --> /product/get
+2021-07-23 15:28:21,442:INFO:producto encontrado [{'id': 2434, 'nombre_medico': False, 'img': False, 'active': True, 'create_date': '2021-07-07 15:19:44', 'prolongaldo': False, 'recipe_line_id': [1407], 'assigned': True, 'fecha_receta': '2021-07-06', 'posologia': ''}]
+2021-07-23 15:28:21,443:INFO:127.0.0.1 - - [23/Jul/2021 15:28:21] "GET /prueba HTTP/1.1" 200 -
+2021-07-23 15:28:42,157:INFO:Vista --> /product/get
+2021-07-23 15:28:43,146:INFO:producto encontrado [{'id': 2, 'nombre_medico': False, 'img': True, 'active': True, 'create_date': '2020-07-21 19:33:09', 'prolongaldo': False, 'recipe_line_id': [], 'assigned': True, 'fecha_receta': '2020-07-15', 'posologia': ''}]
+2021-07-23 15:28:43,147:INFO:127.0.0.1 - - [23/Jul/2021 15:28:43] "GET /prueba HTTP/1.1" 200 -
+2021-07-23 15:28:48,717:INFO:Vista --> /product/get
+2021-07-23 15:28:49,836:INFO:producto encontrado [{'id': 2434, 'nombre_medico': False, 'img': False, 'active': True, 'create_date': '2021-07-07 15:19:44', 'prolongaldo': False, 'recipe_line_id': [1407], 'assigned': True, 'fecha_receta': '2021-07-06', 'posologia': ''}]
+2021-07-23 15:28:49,837:INFO:127.0.0.1 - - [23/Jul/2021 15:28:49] "GET /prueba HTTP/1.1" 200 -
+2021-07-23 15:36:42,172:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/api.py', reloading
+2021-07-23 15:36:42,242:INFO: * Restarting with stat
+2021-07-23 15:36:42,753:WARNING: * Debugger is active!
+2021-07-23 15:36:42,755:INFO: * Debugger PIN: 762-867-680
+2021-07-23 15:36:47,043:INFO:Vista --> /product/get
+2021-07-23 15:36:48,142:INFO:producto encontrado [{'id': 2434, 'nombre_medico': False, 'img': False, 'active': True, 'create_date': '2021-07-07 15:19:44', 'prolongaldo': False, 'recipe_line_id': [1407], 'assigned': True, 'fecha_receta': '2021-07-06', 'posologia': ''}]
+2021-07-23 15:36:48,144:INFO:127.0.0.1 - - [23/Jul/2021 15:36:48] "GET /prueba HTTP/1.1" 200 -
+2021-07-23 15:37:13,055:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/api.py', reloading
+2021-07-23 15:37:13,132:INFO: * Restarting with stat
+2021-07-23 15:37:13,725:WARNING: * Debugger is active!
+2021-07-23 15:37:13,728:INFO: * Debugger PIN: 762-867-680
+2021-07-23 15:37:14,761:INFO:Vista --> /product/get
+2021-07-23 15:37:15,930:INFO:producto encontrado [{'id': 2434, 'nombre_medico': False, 'img': False, 'active': True, 'create_date': '2021-07-07 15:19:44', 'prolongaldo': False, 'recipe_line_id': [1407], 'assigned': True, 'fecha_receta': '2021-07-06', 'posologia': ''}]
+2021-07-23 15:37:15,931:INFO:127.0.0.1 - - [23/Jul/2021 15:37:15] "GET /prueba HTTP/1.1" 200 -
+2021-07-23 15:37:49,080:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/api.py', reloading
+2021-07-23 15:37:49,151:INFO: * Restarting with stat
+2021-07-23 15:37:49,798:WARNING: * Debugger is active!
+2021-07-23 15:37:49,800:INFO: * Debugger PIN: 762-867-680
+2021-07-23 15:37:51,290:INFO:Vista --> /product/get
+2021-07-23 15:37:53,061:INFO:127.0.0.1 - - [23/Jul/2021 15:37:53] "[35m[1mGET /prueba HTTP/1.1[0m" 500 -
+2021-07-23 15:40:50,501:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/api.py', reloading
+2021-07-23 15:40:50,585:INFO: * Restarting with stat
+2021-07-23 15:40:51,151:WARNING: * Debugger is active!
+2021-07-23 15:40:51,154:INFO: * Debugger PIN: 762-867-680
+2021-07-23 15:40:53,821:INFO:Vista --> /product/get
+2021-07-23 15:40:54,858:INFO:producto encontrado [{'id': 2434, 'nombre_medico': False, 'img': False, 'active': True, 'create_date': '2021-07-07 15:19:44', 'prolongaldo': False, 'recipe_line_id': [1407], 'assigned': True, 'fecha_receta': '2021-07-06', 'posologia': ''}]
+2021-07-23 15:40:54,867:INFO:127.0.0.1 - - [23/Jul/2021 15:40:54] "GET /prueba HTTP/1.1" 200 -
+2021-07-23 15:41:09,387:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/api.py', reloading
+2021-07-23 15:41:09,463:INFO: * Restarting with stat
+2021-07-23 15:41:10,052:WARNING: * Debugger is active!
+2021-07-23 15:41:10,054:INFO: * Debugger PIN: 762-867-680
+2021-07-23 15:41:23,920:INFO:Vista --> /product/get
+2021-07-23 15:41:26,007:INFO:producto encontrado [{'id': 2434, 'nombre_medico': False, 'img': False, 'active': True, 'create_date': '2021-07-07 15:19:44', 'prolongaldo': False, 'recipe_line_id': [1407], 'assigned': True, 'fecha_receta': '2021-07-06', 'posologia': ''}]
+2021-07-23 15:41:26,023:INFO:127.0.0.1 - - [23/Jul/2021 15:41:26] "GET /prueba HTTP/1.1" 200 -
+2021-07-23 15:56:48,617:INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-07-23 15:56:48,621:INFO: * Restarting with stat
+2021-07-23 15:56:49,167:WARNING: * Debugger is active!
+2021-07-23 15:56:49,172:INFO: * Debugger PIN: 762-867-680
+2021-07-23 15:56:53,878:INFO:Vista --> /product/get
+2021-07-23 15:56:55,972:INFO:producto encontrado [{'id': 2434, 'nombre_medico': False, 'img': False, 'active': True, 'create_date': '2021-07-07 15:19:44', 'prolongaldo': False, 'recipe_line_id': [1407], 'assigned': True, 'fecha_receta': '2021-07-06', 'posologia': ''}]
+2021-07-23 15:56:55,974:INFO:127.0.0.1 - - [23/Jul/2021 15:56:55] "GET /prueba HTTP/1.1" 200 -
+2021-07-23 16:19:24,065:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/api.py', reloading
+2021-07-23 16:19:24,140:INFO: * Restarting with stat
+2021-07-23 16:19:24,659:WARNING: * Debugger is active!
+2021-07-23 16:19:24,663:INFO: * Debugger PIN: 762-867-680
+2021-07-23 16:19:29,744:INFO:Vista --> /product/get
+2021-07-23 16:19:32,103:INFO:127.0.0.1 - - [23/Jul/2021 16:19:32] "[35m[1mGET /prueba HTTP/1.1[0m" 500 -
+2021-07-23 16:28:07,252:INFO:vista -->  /sale
+2021-07-23 16:28:07,253:INFO:data recivida {'cliente': {'name': 'Don Amar', 'rut': '212121-9', 'comment': 'Sin comentarios', 'phone': '555666777888', 'email': 'donAmar@gmail.com'}, 'venta': {'default_code': '01010111134', 'categ_name': 'Magistral', 'client_order_ref': '34', 'partner_invoice_id': '12148', 'partner_shipping_id': '12148', 'payment_acquirer_id': '2', 'pricelist_id': '1'}, 'producto': {'default_code': '01010111134', 'product_id': '6572', 'product_uom_qty': '12', 'price_unit': '1000'}}
+2021-07-23 16:28:09,387:ERROR:SO7209 Esa Venta ya existe en la Base de Datos
+2021-07-23 16:28:09,389:INFO:127.0.0.1 - - [23/Jul/2021 16:28:09] "POST /sale HTTP/1.1" 200 -
+2021-07-23 16:28:20,898:INFO:vista -->  /sale
+2021-07-23 16:28:20,899:INFO:data recivida {'cliente': {'name': 'Don Amar', 'rut': '212121-9', 'comment': 'Sin comentarios', 'phone': '555666777888', 'email': 'donAmar@gmail.com'}, 'venta': {'default_code': '01010111134', 'categ_name': 'Magistral', 'client_order_ref': '94', 'partner_invoice_id': '12148', 'partner_shipping_id': '12148', 'payment_acquirer_id': '2', 'pricelist_id': '1'}, 'producto': {'default_code': '01010111134', 'product_id': '6572', 'product_uom_qty': '12', 'price_unit': '1000'}}
+2021-07-23 16:28:23,959:INFO:existe el cliente 12241
+2021-07-23 16:28:26,227:INFO:orden creada 7181
+2021-07-23 16:28:27,895:INFO:line agregada a la orden
+2021-07-23 16:28:27,896:INFO:127.0.0.1 - - [23/Jul/2021 16:28:27] "POST /sale HTTP/1.1" 200 -
+2021-07-23 16:33:34,264:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/api.py', reloading
+2021-07-23 16:33:34,342:INFO: * Restarting with stat
+2021-07-23 16:33:35,035:WARNING: * Debugger is active!
+2021-07-23 16:33:35,037:INFO: * Debugger PIN: 762-867-680
+2021-07-23 16:33:35,690:INFO:vista -->  /sale
+2021-07-23 16:33:35,691:INFO:data recivida {'cliente': {'name': 'Don Amar', 'rut': '212121-9', 'comment': 'Sin comentarios', 'phone': '555666777888', 'email': 'donAmar@gmail.com'}, 'venta': {'default_code': '01010111134', 'categ_name': 'Magistral', 'client_order_ref': '94', 'partner_invoice_id': '12148', 'partner_shipping_id': '12148', 'payment_acquirer_id': '2', 'pricelist_id': '1'}, 'producto': {'default_code': '01010111134', 'product_id': '6572', 'product_uom_qty': '12', 'price_unit': '1000'}}
+2021-07-23 16:33:37,800:ERROR:SO7223 Esa Venta ya existe en la Base de Datos
+2021-07-23 16:33:37,802:INFO:127.0.0.1 - - [23/Jul/2021 16:33:37] "POST /sale HTTP/1.1" 200 -
+2021-07-23 16:33:50,565:INFO:Vista --> /product/get
+2021-07-23 16:33:52,728:INFO:producto encontrado [{'id': 2434, 'nombre_medico': False, 'img': False, 'active': True, 'create_date': '2021-07-07 15:19:44', 'prolongaldo': False, 'recipe_line_id': [1407], 'assigned': True, 'fecha_receta': '2021-07-06', 'posologia': '', 'lines': [[{'id': 1407, 'product_id': [7166, '[17031] Vargatef 150 mg CJ x 60 cápsulas'], 'demand': 0, 'reservation': 1, 'default_code': '17031'}]]}]
+2021-07-23 16:33:52,729:INFO:127.0.0.1 - - [23/Jul/2021 16:33:52] "GET /prueba HTTP/1.1" 200 -
+2021-07-23 16:43:26,335:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/models/recipe/resources.py', reloading
+2021-07-23 16:43:26,441:INFO: * Restarting with stat
+2021-07-23 16:43:27,303:WARNING: * Debugger is active!
+2021-07-23 16:43:27,307:INFO: * Debugger PIN: 762-867-680
+2021-07-23 16:48:30,340:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/models/recipe/resources.py', reloading
+2021-07-23 16:48:30,425:INFO: * Restarting with stat
+2021-07-23 16:48:31,006:WARNING: * Debugger is active!
+2021-07-23 16:48:31,009:INFO: * Debugger PIN: 762-867-680
+2021-07-23 16:53:31,955:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/models/recipe_line/resources.py', reloading
+2021-07-23 16:53:32,073:INFO: * Restarting with stat
+2021-07-23 16:53:32,826:WARNING: * Debugger is active!
+2021-07-23 16:53:32,828:INFO: * Debugger PIN: 762-867-680
+2021-07-23 16:53:35,887:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/api.py', reloading
+2021-07-23 16:53:35,964:INFO: * Restarting with stat
+2021-07-23 16:53:36,478:WARNING: * Debugger is active!
+2021-07-23 16:53:36,480:INFO: * Debugger PIN: 762-867-680
+2021-07-26 09:29:05,325:INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-07-26 09:29:05,334:INFO: * Restarting with stat
+2021-07-26 09:29:05,927:WARNING: * Debugger is active!
+2021-07-26 09:29:06,041:INFO: * Debugger PIN: 878-783-307
+2021-07-26 09:29:14,864:INFO:Vista --> /product/get
+2021-07-26 09:29:17,169:INFO:producto encontrado [{'id': 2434, 'nombre_medico': False, 'img': False, 'active': True, 'create_date': '2021-07-07 15:19:44', 'prolongaldo': False, 'recipe_line_id': [1407], 'assigned': True, 'fecha_receta': '2021-07-06', 'posologia': '', 'lines': [[{'id': 1407, 'product_id': [7166, '[17031] Vargatef 150 mg CJ x 60 cápsulas'], 'demand': 0, 'reservation': 1, 'default_code': '17031'}]]}]
+2021-07-26 09:29:17,170:INFO:127.0.0.1 - - [26/Jul/2021 09:29:17] "GET /prueba HTTP/1.1" 200 -
+2021-07-26 09:40:45,160:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/api.py', reloading
+2021-07-26 09:40:45,233:INFO: * Restarting with stat
+2021-07-26 09:40:45,844:WARNING: * Debugger is active!
+2021-07-26 09:40:45,848:INFO: * Debugger PIN: 878-783-307
+2021-07-26 09:42:32,814:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/api.py', reloading
+2021-07-26 09:42:32,879:INFO: * Restarting with stat
+2021-07-26 09:42:33,455:WARNING: * Debugger is active!
+2021-07-26 09:42:33,458:INFO: * Debugger PIN: 878-783-307
+2021-07-26 09:44:26,447:INFO:Vista --> /product/get
+2021-07-26 09:44:26,472:INFO:127.0.0.1 - - [26/Jul/2021 09:44:26] "[35m[1mGET /prueba HTTP/1.1[0m" 500 -
+2021-07-26 09:45:28,088:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/api.py', reloading
+2021-07-26 09:45:28,161:INFO: * Restarting with stat
+2021-07-26 09:45:28,704:WARNING: * Debugger is active!
+2021-07-26 09:45:28,706:INFO: * Debugger PIN: 878-783-307
+2021-07-26 09:45:39,850:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/api.py', reloading
+2021-07-26 09:45:39,917:INFO: * Restarting with stat
+2021-07-26 09:45:40,508:WARNING: * Debugger is active!
+2021-07-26 09:45:40,510:INFO: * Debugger PIN: 878-783-307
+2021-07-26 09:45:43,336:INFO:Vista --> /product/get
+2021-07-26 09:45:45,690:INFO:producto encontrado [{'id': 2434, 'nombre_medico': False, 'img': False, 'active': True, 'create_date': '2021-07-07 15:19:44', 'prolongaldo': False, 'recipe_line_id': [1407], 'assigned': True, 'fecha_receta': '2021-07-06', 'posologia': '', 'lines': [[{'id': 1407, 'product_id': [7166, '[17031] Vargatef 150 mg CJ x 60 cápsulas'], 'demand': 0, 'reservation': 1, 'default_code': '17031'}]]}]
+2021-07-26 09:45:45,696:INFO:127.0.0.1 - - [26/Jul/2021 09:45:45] "GET /prueba HTTP/1.1" 200 -
+2021-07-26 09:46:05,414:INFO:Vista --> /product/get
+2021-07-26 09:46:07,654:INFO:producto encontrado [{'id': 2434, 'nombre_medico': False, 'img': False, 'active': True, 'create_date': '2021-07-07 15:19:44', 'prolongaldo': False, 'recipe_line_id': [1407], 'assigned': True, 'fecha_receta': '2021-07-06', 'posologia': '', 'lines': [[{'id': 1407, 'product_id': [7166, '[17031] Vargatef 150 mg CJ x 60 cápsulas'], 'demand': 0, 'reservation': 1, 'default_code': '17031'}]]}]
+2021-07-26 09:46:07,655:INFO:127.0.0.1 - - [26/Jul/2021 09:46:07] "GET /prueba HTTP/1.1" 200 -
+2021-07-26 09:46:59,370:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/api.py', reloading
+2021-07-26 09:46:59,446:INFO: * Restarting with stat
+2021-07-26 09:47:00,017:WARNING: * Debugger is active!
+2021-07-26 09:47:00,019:INFO: * Debugger PIN: 878-783-307
+2021-07-26 09:56:54,334:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/models/partner/resources.py', reloading
+2021-07-26 09:56:54,412:INFO: * Restarting with stat
+2021-07-26 09:56:55,313:WARNING: * Debugger is active!
+2021-07-26 09:56:55,316:INFO: * Debugger PIN: 878-783-307
+2021-07-26 10:22:00,247:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/models/partner/resources.py', reloading
+2021-07-26 10:22:00,321:INFO: * Restarting with stat
+2021-07-26 10:22:01,027:WARNING: * Debugger is active!
+2021-07-26 10:22:01,030:INFO: * Debugger PIN: 878-783-307
+2021-07-26 10:29:16,202:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/api.py', reloading
+2021-07-26 10:29:16,290:INFO: * Restarting with stat
+2021-07-26 10:29:16,786:WARNING: * Debugger is active!
+2021-07-26 10:29:16,790:INFO: * Debugger PIN: 878-783-307
+2021-07-26 10:29:51,125:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/api.py', reloading
+2021-07-26 10:29:51,193:INFO: * Restarting with stat
+2021-07-26 10:29:51,688:WARNING: * Debugger is active!
+2021-07-26 10:29:51,690:INFO: * Debugger PIN: 878-783-307
+2021-07-26 10:29:58,884:INFO:Vista --> /product/get
+2021-07-26 10:30:01,188:INFO:producto encontrado [{'id': 2434, 'nombre_medico': False, 'img': False, 'active': True, 'create_date': '2021-07-07 15:19:44', 'prolongaldo': False, 'recipe_line_id': [1407], 'assigned': True, 'fecha_receta': '2021-07-06', 'posologia': '', 'lines': [[{'id': 1407, 'product_id': [7166, '[17031] Vargatef 150 mg CJ x 60 cápsulas'], 'demand': 0, 'reservation': 1, 'default_code': '17031'}]]}]
+2021-07-26 10:30:01,191:INFO:127.0.0.1 - - [26/Jul/2021 10:30:01] "GET /prueba HTTP/1.1" 200 -
+2021-07-26 10:30:29,842:INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-07-26 10:30:29,848:INFO: * Restarting with stat
+2021-07-26 10:30:30,370:WARNING: * Debugger is active!
+2021-07-26 10:30:30,372:INFO: * Debugger PIN: 878-783-307
+2021-07-26 10:30:36,475:INFO:Vista --> /product/get
+2021-07-26 10:30:41,790:INFO:producto encontrado [{'id': 2434, 'nombre_medico': False, 'img': False, 'active': True, 'create_date': '2021-07-07 15:19:44', 'prolongaldo': False, 'recipe_line_id': [1407], 'assigned': True, 'fecha_receta': '2021-07-06', 'posologia': '', 'lines': [[{'id': 1407, 'product_id': [7166, '[17031] Vargatef 150 mg CJ x 60 cápsulas'], 'demand': 0, 'reservation': 1, 'default_code': '17031'}]]}]
+2021-07-26 10:30:41,792:INFO:127.0.0.1 - - [26/Jul/2021 10:30:41] "GET /prueba HTTP/1.1" 200 -
+2021-07-26 10:32:15,481:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/api.py', reloading
+2021-07-26 10:32:15,579:INFO: * Restarting with stat
+2021-07-26 10:32:16,134:WARNING: * Debugger is active!
+2021-07-26 10:32:16,136:INFO: * Debugger PIN: 878-783-307
+2021-07-26 10:33:49,563:INFO:Vista --> /prueba
+2021-07-26 10:33:50,680:ERROR:Error : no existe un producto con ese defaultcode
+2021-07-26 10:33:50,702:INFO:127.0.0.1 - - [26/Jul/2021 10:33:50] "[35m[1mGET /prueba HTTP/1.1[0m" 500 -
+2021-07-26 10:34:15,282:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/api.py', reloading
+2021-07-26 10:34:15,367:INFO: * Restarting with stat
+2021-07-26 10:34:16,004:WARNING: * Debugger is active!
+2021-07-26 10:34:16,006:INFO: * Debugger PIN: 878-783-307
+2021-07-26 10:34:19,828:INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-07-26 10:34:19,831:INFO: * Restarting with stat
+2021-07-26 10:34:20,353:WARNING: * Debugger is active!
+2021-07-26 10:34:20,356:INFO: * Debugger PIN: 878-783-307
+2021-07-26 10:34:22,879:INFO:Vista --> /prueba
+2021-07-26 10:34:23,986:ERROR:Error : no existe un producto con ese defaultcode
+2021-07-26 10:34:25,167:INFO:existe el cliente 5142
+2021-07-26 10:34:25,169:INFO:127.0.0.1 - - [26/Jul/2021 10:34:25] "GET /prueba HTTP/1.1" 200 -
+2021-07-26 10:54:26,679:INFO:Vista --> /prueba
+2021-07-26 10:54:28,946:ERROR:Error : no existe un producto con ese defaultcode
+2021-07-26 10:54:33,170:INFO:No existe el cliente por lo que se creo uno nuevo
+2021-07-26 10:54:33,947:INFO:127.0.0.1 - - [26/Jul/2021 10:54:33] "[35m[1mGET /prueba HTTP/1.1[0m" 500 -
+2021-07-26 10:55:43,475:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/models/partner/resources.py', reloading
+2021-07-26 10:55:43,547:INFO: * Restarting with stat
+2021-07-26 10:55:44,223:WARNING: * Debugger is active!
+2021-07-26 10:55:44,225:INFO: * Debugger PIN: 878-783-307
+2021-07-26 10:55:55,182:INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-07-26 10:55:55,185:INFO: * Restarting with stat
+2021-07-26 10:55:55,792:WARNING: * Debugger is active!
+2021-07-26 10:55:55,795:INFO: * Debugger PIN: 878-783-307
+2021-07-26 10:56:03,152:INFO:Vista --> /prueba
+2021-07-26 10:56:04,401:ERROR:Error : no existe un producto con ese defaultcode
+2021-07-26 10:56:05,584:INFO:No existe el cliente por lo que se creo uno nuevo
+2021-07-26 10:56:06,972:INFO:127.0.0.1 - - [26/Jul/2021 10:56:06] "[35m[1mGET /prueba HTTP/1.1[0m" 500 -
+2021-07-26 10:58:12,025:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/models/partner/resources.py', reloading
+2021-07-26 10:58:12,114:INFO: * Restarting with stat
+2021-07-26 10:58:12,759:WARNING: * Debugger is active!
+2021-07-26 10:58:12,761:INFO: * Debugger PIN: 878-783-307
+2021-07-26 10:58:16,451:INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-07-26 10:58:16,454:INFO: * Restarting with stat
+2021-07-26 10:58:17,003:WARNING: * Debugger is active!
+2021-07-26 10:58:17,008:INFO: * Debugger PIN: 878-783-307
+2021-07-26 10:58:22,387:INFO:Vista --> /prueba
+2021-07-26 10:58:23,561:ERROR:Error : no existe un producto con ese defaultcode
+2021-07-26 10:58:24,741:INFO:No existe el cliente por lo que se creo uno nuevo
+2021-07-26 10:58:25,940:INFO:127.0.0.1 - - [26/Jul/2021 10:58:25] "[35m[1mGET /prueba HTTP/1.1[0m" 500 -
+2021-07-26 11:23:35,491:INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-07-26 11:23:35,495:INFO: * Restarting with stat
+2021-07-26 11:23:35,983:WARNING: * Debugger is active!
+2021-07-26 11:23:35,985:INFO: * Debugger PIN: 878-783-307
+2021-07-26 11:23:38,388:INFO:Vista --> /prueba
+2021-07-26 11:23:39,498:ERROR:Error : no existe un producto con ese defaultcode
+2021-07-26 11:23:40,669:INFO:No existe el cliente por lo que se creo uno nuevo
+2021-07-26 11:23:42,483:INFO:127.0.0.1 - - [26/Jul/2021 11:23:42] "GET /prueba HTTP/1.1" 200 -
+2021-07-26 11:26:52,900:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/api.py', reloading
+2021-07-26 11:26:52,979:INFO: * Restarting with stat
+2021-07-26 11:26:53,592:WARNING: * Debugger is active!
+2021-07-26 11:26:53,594:INFO: * Debugger PIN: 878-783-307
+2021-07-26 11:26:59,171:INFO:Vista --> /prueba
+2021-07-26 11:26:59,173:INFO:127.0.0.1 - - [26/Jul/2021 11:26:59] "[31m[1mGET /prueba HTTP/1.1[0m" 400 -
+2021-07-26 11:27:07,941:INFO:Vista --> /prueba
+2021-07-26 11:27:10,207:INFO:existe el cliente 12267
+2021-07-26 11:27:10,208:INFO:127.0.0.1 - - [26/Jul/2021 11:27:10] "GET /prueba HTTP/1.1" 200 -
+2021-07-26 12:06:46,406:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/models/recipe/resources.py', reloading
+2021-07-26 12:06:46,478:INFO: * Restarting with stat
+2021-07-26 12:06:47,081:WARNING: * Debugger is active!
+2021-07-26 12:06:47,088:INFO: * Debugger PIN: 878-783-307
+2021-07-26 12:10:53,264:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/api.py', reloading
+2021-07-26 12:10:53,330:INFO: * Restarting with stat
+2021-07-26 12:10:53,811:WARNING: * Debugger is active!
+2021-07-26 12:10:53,813:INFO: * Debugger PIN: 878-783-307
+2021-07-26 12:11:42,267:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/api.py', reloading
+2021-07-26 12:11:42,355:INFO: * Restarting with stat
+2021-07-26 12:11:43,114:WARNING: * Debugger is active!
+2021-07-26 12:11:43,119:INFO: * Debugger PIN: 878-783-307
+2021-07-26 12:11:57,309:INFO:Vista --> /prueba
+2021-07-26 12:11:59,626:INFO:existe el cliente 12267
+2021-07-26 12:12:00,446:INFO:127.0.0.1 - - [26/Jul/2021 12:12:00] "[35m[1mGET /prueba HTTP/1.1[0m" 500 -
+2021-07-26 12:13:42,331:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/api.py', reloading
+2021-07-26 12:13:42,411:INFO: * Restarting with stat
+2021-07-26 12:13:43,056:WARNING: * Debugger is active!
+2021-07-26 12:13:43,058:INFO: * Debugger PIN: 878-783-307
+2021-07-26 12:13:50,938:INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-07-26 12:13:50,943:INFO: * Restarting with stat
+2021-07-26 12:13:51,506:WARNING: * Debugger is active!
+2021-07-26 12:13:51,509:INFO: * Debugger PIN: 878-783-307
+2021-07-26 12:13:58,774:INFO:Vista --> /prueba
+2021-07-26 12:14:02,249:INFO:existe el cliente 12267
+2021-07-26 12:14:03,421:INFO:127.0.0.1 - - [26/Jul/2021 12:14:03] "[35m[1mGET /prueba HTTP/1.1[0m" 500 -
+2021-07-26 12:15:38,599:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/models/recipe/resources.py', reloading
+2021-07-26 12:15:38,686:INFO: * Restarting with stat
+2021-07-26 12:15:39,314:WARNING: * Debugger is active!
+2021-07-26 12:15:39,316:INFO: * Debugger PIN: 878-783-307
+2021-07-26 12:15:49,465:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/models/recipe/resources.py', reloading
+2021-07-26 12:15:49,544:INFO: * Restarting with stat
+2021-07-26 12:15:50,101:WARNING: * Debugger is active!
+2021-07-26 12:15:50,103:INFO: * Debugger PIN: 878-783-307
+2021-07-26 12:16:00,080:INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-07-26 12:16:00,088:INFO: * Restarting with stat
+2021-07-26 12:16:00,645:WARNING: * Debugger is active!
+2021-07-26 12:16:00,648:INFO: * Debugger PIN: 878-783-307
+2021-07-26 12:16:03,016:INFO:Vista --> /prueba
+2021-07-26 12:16:05,311:INFO:existe el cliente 12267
+2021-07-26 12:16:06,483:INFO:se creo la receta con el siguiente id 2439
+2021-07-26 12:16:06,484:INFO:127.0.0.1 - - [26/Jul/2021 12:16:06] "GET /prueba HTTP/1.1" 200 -
+2021-07-26 12:20:38,129:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/models/recipe/resources.py', reloading
+2021-07-26 12:20:38,205:INFO: * Restarting with stat
+2021-07-26 12:20:38,753:WARNING: * Debugger is active!
+2021-07-26 12:20:38,756:INFO: * Debugger PIN: 878-783-307
+2021-07-26 12:47:09,404:INFO:Vista --> /prueba
+2021-07-26 12:47:11,779:INFO:No existe el cliente por lo que se creo uno nuevo
+2021-07-26 12:47:14,710:INFO:se creo la receta con el siguiente id 2440
+2021-07-26 12:47:14,711:INFO:127.0.0.1 - - [26/Jul/2021 12:47:14] "GET /prueba HTTP/1.1" 200 -
+2021-07-26 12:49:54,400:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/models/recipe/resources.py', reloading
+2021-07-26 12:49:54,497:INFO: * Restarting with stat
+2021-07-26 12:49:55,089:WARNING: * Debugger is active!
+2021-07-26 12:49:55,093:INFO: * Debugger PIN: 878-783-307
+2021-07-26 12:49:57,919:INFO:Vista --> /prueba
+2021-07-26 12:50:01,200:INFO:existe el cliente 12269
+2021-07-26 12:50:02,441:INFO:127.0.0.1 - - [26/Jul/2021 12:50:02] "[35m[1mGET /prueba HTTP/1.1[0m" 500 -
+2021-07-26 13:25:20,582:INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-07-26 13:25:20,588:INFO: * Restarting with stat
+2021-07-26 13:25:21,256:WARNING: * Debugger is active!
+2021-07-26 13:25:21,258:INFO: * Debugger PIN: 878-783-307
+2021-07-26 13:25:46,994:INFO:Vista --> /prueba
+2021-07-26 13:25:47,007:INFO:127.0.0.1 - - [26/Jul/2021 13:25:47] "[35m[1mGET /prueba HTTP/1.1[0m" 500 -
+2021-07-26 13:25:57,566:INFO:Vista --> /prueba
+2021-07-26 13:25:57,577:INFO:127.0.0.1 - - [26/Jul/2021 13:25:57] "[35m[1mGET /prueba HTTP/1.1[0m" 500 -
+2021-07-26 13:26:26,904:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/api.py', reloading
+2021-07-26 13:26:27,011:INFO: * Restarting with stat
+2021-07-26 13:26:27,597:WARNING: * Debugger is active!
+2021-07-26 13:26:27,600:INFO: * Debugger PIN: 878-783-307
+2021-07-26 13:26:29,743:INFO:Vista --> /prueba
+2021-07-26 13:26:29,772:INFO:127.0.0.1 - - [26/Jul/2021 13:26:29] "[35m[1mGET /prueba HTTP/1.1[0m" 500 -
+2021-07-26 13:27:52,068:INFO:Vista --> /prueba
+2021-07-26 13:27:54,456:INFO:existe el cliente 12269
+2021-07-26 13:27:55,682:INFO:127.0.0.1 - - [26/Jul/2021 13:27:55] "[35m[1mGET /prueba HTTP/1.1[0m" 500 -
+2021-07-26 13:31:23,326:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/models/recipe/resources.py', reloading
+2021-07-26 13:31:23,402:INFO: * Restarting with stat
+2021-07-26 13:31:23,951:WARNING: * Debugger is active!
+2021-07-26 13:31:23,954:INFO: * Debugger PIN: 878-783-307
+2021-07-26 13:31:31,045:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/models/recipe/resources.py', reloading
+2021-07-26 13:31:31,126:INFO: * Restarting with stat
+2021-07-26 13:31:31,666:WARNING: * Debugger is active!
+2021-07-26 13:31:31,668:INFO: * Debugger PIN: 878-783-307
+2021-07-26 13:32:28,221:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/api.py', reloading
+2021-07-26 13:32:28,285:INFO: * Restarting with stat
+2021-07-26 13:32:28,781:WARNING: * Debugger is active!
+2021-07-26 13:32:28,783:INFO: * Debugger PIN: 878-783-307
+2021-07-26 13:32:55,034:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/api.py', reloading
+2021-07-26 13:32:55,117:INFO: * Restarting with stat
+2021-07-26 13:32:55,870:WARNING: * Debugger is active!
+2021-07-26 13:32:55,872:INFO: * Debugger PIN: 878-783-307
+2021-07-26 13:33:03,225:INFO:Vista --> /prueba
+2021-07-26 13:33:05,521:INFO:existe el cliente 12269
+2021-07-26 13:33:06,744:INFO:se creo la receta con el siguiente id 2441
+2021-07-26 13:33:06,745:INFO:127.0.0.1 - - [26/Jul/2021 13:33:06] "GET /prueba HTTP/1.1" 200 -
+2021-07-26 13:34:51,993:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/models/recipe/resources.py', reloading
+2021-07-26 13:34:52,072:INFO: * Restarting with stat
+2021-07-26 13:34:52,674:WARNING: * Debugger is active!
+2021-07-26 13:34:52,680:INFO: * Debugger PIN: 878-783-307
+2021-07-26 13:34:55,512:INFO:Vista --> /prueba
+2021-07-26 13:34:57,746:INFO:existe el cliente 12269
+2021-07-26 13:34:58,927:INFO:se creo la receta con el siguiente id 2442
+2021-07-26 13:34:58,931:INFO:127.0.0.1 - - [26/Jul/2021 13:34:58] "GET /prueba HTTP/1.1" 200 -
+2021-07-26 13:36:01,343:INFO:Vista --> /prueba
+2021-07-26 13:36:02,511:INFO:producto encontrado [{'id': 2441, 'nombre_medico': False, 'img': True, 'active': True, 'create_date': '2021-07-26 17:33:06', 'prolongaldo': False, 'recipe_line_id': [], 'assigned': True, 'fecha_receta': False, 'posologia': False, 'lines': []}]
+2021-07-26 13:36:02,513:INFO:127.0.0.1 - - [26/Jul/2021 13:36:02] "GET /prueba HTTP/1.1" 200 -
+2021-07-26 13:38:33,775:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/api.py', reloading
+2021-07-26 13:38:33,852:INFO: * Restarting with stat
+2021-07-26 13:38:34,348:WARNING: * Debugger is active!
+2021-07-26 13:38:34,349:INFO: * Debugger PIN: 878-783-307
+2021-07-26 13:39:38,941:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/api.py', reloading
+2021-07-26 13:39:39,023:INFO: * Restarting with stat
+2021-07-26 13:39:39,577:WARNING: * Debugger is active!
+2021-07-26 13:39:39,579:INFO: * Debugger PIN: 878-783-307
+2021-07-26 13:46:16,042:INFO:Vista --> /prueba
+2021-07-26 13:46:21,623:INFO:producto encontrado [{'id': 2441, 'nombre_medico': False, 'img': True, 'active': True, 'create_date': '2021-07-26 17:33:06', 'prolongaldo': False, 'recipe_line_id': [1411, 1412], 'assigned': True, 'fecha_receta': False, 'posologia': '<p><br></p>', 'lines': [[{'id': 1411, 'product_id': [6572, '[1185] AB Miel Limon x 12 comprimidos masticables'], 'demand': 1, 'reservation': 0, 'default_code': '1185'}], [{'id': 1412, 'product_id': [4257, '[1] Abrilar Jarabe 35mg/5ml x 100ml'], 'demand': 2, 'reservation': 0, 'default_code': '1'}]]}]
+2021-07-26 13:46:21,626:INFO:127.0.0.1 - - [26/Jul/2021 13:46:21] "GET /prueba HTTP/1.1" 200 -
+2021-07-26 16:33:38,150:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/models/recipe/resources.py', reloading
+2021-07-26 16:33:38,347:INFO: * Restarting with stat
+2021-07-26 16:33:39,038:WARNING: * Debugger is active!
+2021-07-26 16:33:39,043:INFO: * Debugger PIN: 878-783-307
+2021-07-26 16:35:48,631:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/api.py', reloading
+2021-07-26 16:35:48,854:INFO: * Restarting with stat
+2021-07-26 16:35:49,689:WARNING: * Debugger is active!
+2021-07-26 16:35:49,692:INFO: * Debugger PIN: 878-783-307
+2021-07-26 16:36:04,086:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/api.py', reloading
+2021-07-26 16:36:04,317:INFO: * Restarting with stat
+2021-07-26 16:36:06,101:WARNING: * Debugger is active!
+2021-07-26 16:36:06,107:INFO: * Debugger PIN: 878-783-307
+2021-07-26 16:36:18,465:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/api.py', reloading
+2021-07-26 16:36:18,691:INFO: * Restarting with stat
+2021-07-26 16:36:19,543:WARNING: * Debugger is active!
+2021-07-26 16:36:19,547:INFO: * Debugger PIN: 878-783-307
+2021-07-26 16:36:20,762:INFO:Vista --> /prueba
+2021-07-26 16:36:24,193:INFO:producto encontrado [{'id': 2441, 'nombre_medico': False, 'img': True, 'active': True, 'create_date': '2021-07-26 17:33:06', 'prolongaldo': False, 'recipe_line_id': [1411, 1412], 'assigned': True, 'fecha_receta': False, 'posologia': '<p><br></p>', 'lines': [[{'id': 1411, 'product_id': [6572, '[1185] AB Miel Limon x 12 comprimidos masticables'], 'demand': 1, 'reservation': 0, 'default_code': '1185'}], [{'id': 1412, 'product_id': [4257, '[1] Abrilar Jarabe 35mg/5ml x 100ml'], 'demand': 2, 'reservation': 0, 'default_code': '1'}]]}]
+2021-07-26 16:36:24,195:INFO:127.0.0.1 - - [26/Jul/2021 16:36:24] "GET /prueba HTTP/1.1" 200 -
+2021-07-26 16:39:44,047:INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-07-26 16:39:44,055:INFO: * Restarting with stat
+2021-07-26 16:39:44,680:WARNING: * Debugger is active!
+2021-07-26 16:39:44,683:INFO: * Debugger PIN: 878-783-307
+2021-07-26 16:39:48,079:INFO:Vista --> /prueba
+2021-07-26 16:39:51,572:INFO:producto encontrado [{'id': 2441, 'nombre_medico': False, 'img': True, 'active': True, 'create_date': '2021-07-26 17:33:06', 'prolongaldo': False, 'recipe_line_id': [1411, 1412], 'assigned': True, 'fecha_receta': False, 'posologia': '<p><br></p>', 'lines': [[{'id': 1411, 'product_id': [6572, '[1185] AB Miel Limon x 12 comprimidos masticables'], 'demand': 1, 'reservation': 0, 'default_code': '1185'}], [{'id': 1412, 'product_id': [4257, '[1] Abrilar Jarabe 35mg/5ml x 100ml'], 'demand': 2, 'reservation': 0, 'default_code': '1'}]]}]
+2021-07-26 16:39:51,587:INFO:127.0.0.1 - - [26/Jul/2021 16:39:51] "GET /prueba HTTP/1.1" 200 -
+2021-07-26 16:40:38,091:INFO:Vista --> /prueba
+2021-07-26 16:40:40,433:INFO:existe el cliente 12269
+2021-07-26 16:40:41,730:INFO:se creo la receta con el siguiente id 2443
+2021-07-26 16:40:41,734:INFO:127.0.0.1 - - [26/Jul/2021 16:40:41] "GET /prueba HTTP/1.1" 200 -
+2021-07-26 16:41:38,580:INFO:Vista --> /prueba
+2021-07-26 16:41:40,894:INFO:existe el cliente 12269
+2021-07-26 16:41:42,071:INFO:se creo la receta con el siguiente id 2444
+2021-07-26 16:41:42,074:INFO:127.0.0.1 - - [26/Jul/2021 16:41:42] "GET /prueba HTTP/1.1" 200 -
+2021-07-26 16:48:37,786:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/api.py', reloading
+2021-07-26 16:48:37,887:INFO: * Restarting with stat
+2021-07-26 16:48:38,522:WARNING: * Debugger is active!
+2021-07-26 16:48:38,525:INFO: * Debugger PIN: 878-783-307
+2021-07-26 16:48:54,711:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/api.py', reloading
+2021-07-26 16:48:54,808:INFO: * Restarting with stat
+2021-07-26 16:48:55,428:WARNING: * Debugger is active!
+2021-07-26 16:48:55,432:INFO: * Debugger PIN: 878-783-307
+2021-07-26 16:48:57,962:INFO:Vista --> /prueba
+2021-07-26 16:49:00,258:INFO:existe el cliente 12269
+2021-07-26 16:49:01,449:INFO:se creo la receta con el siguiente id 2445
+2021-07-26 16:49:01,452:INFO:127.0.0.1 - - [26/Jul/2021 16:49:01] "GET /prueba HTTP/1.1" 200 -
+2021-07-26 16:49:47,921:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/api.py', reloading
+2021-07-26 16:49:47,995:INFO: * Restarting with stat
+2021-07-26 16:49:48,605:WARNING: * Debugger is active!
+2021-07-26 16:49:48,607:INFO: * Debugger PIN: 878-783-307
+2021-07-26 16:49:51,210:INFO:Vista --> /prueba
+2021-07-26 16:49:53,436:INFO:existe el cliente 12269
+2021-07-26 16:49:54,578:INFO:se creo la receta con el siguiente id 2446
+2021-07-26 16:49:54,581:INFO:127.0.0.1 - - [26/Jul/2021 16:49:54] "GET /prueba HTTP/1.1" 200 -
+2021-07-26 16:51:32,555:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/api.py', reloading
+2021-07-26 16:51:32,632:INFO: * Restarting with stat
+2021-07-26 16:52:42,888:INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-07-26 16:52:42,893:INFO: * Restarting with stat
+2021-07-26 16:52:43,419:WARNING: * Debugger is active!
+2021-07-26 16:52:43,421:INFO: * Debugger PIN: 878-783-307
+2021-07-26 16:52:46,031:INFO:Vista --> /prueba
+2021-07-26 16:52:48,328:INFO:existe el cliente 12269
+2021-07-26 16:52:49,467:INFO:se creo la receta con el siguiente id 2447
+2021-07-26 16:52:49,506:INFO:127.0.0.1 - - [26/Jul/2021 16:52:49] "[35m[1mGET /prueba HTTP/1.1[0m" 500 -
+2021-07-26 16:53:32,935:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/api.py', reloading
+2021-07-26 16:53:33,035:INFO: * Restarting with stat
+2021-07-26 16:53:33,601:WARNING: * Debugger is active!
+2021-07-26 16:53:33,604:INFO: * Debugger PIN: 878-783-307
+2021-07-26 16:53:38,242:INFO:Vista --> /prueba
+2021-07-26 16:53:40,511:INFO:existe el cliente 12269
+2021-07-26 16:53:41,703:INFO:se creo la receta con el siguiente id 2448
+2021-07-26 16:53:41,740:INFO:127.0.0.1 - - [26/Jul/2021 16:53:41] "[35m[1mGET /prueba HTTP/1.1[0m" 500 -
+2021-07-26 16:54:52,349:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/api.py', reloading
+2021-07-26 16:54:52,430:INFO: * Restarting with stat
+2021-07-26 16:54:52,996:WARNING: * Debugger is active!
+2021-07-26 16:54:52,999:INFO: * Debugger PIN: 878-783-307
+2021-07-26 16:54:54,821:INFO:Vista --> /prueba
+2021-07-26 16:54:57,180:INFO:existe el cliente 12269
+2021-07-26 16:54:58,333:INFO:se creo la receta con el siguiente id 2449
+2021-07-26 16:54:58,338:INFO:127.0.0.1 - - [26/Jul/2021 16:54:58] "GET /prueba HTTP/1.1" 200 -
+2021-07-26 16:55:25,347:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/api.py', reloading
+2021-07-26 16:55:25,418:INFO: * Restarting with stat
+2021-07-26 16:55:25,897:WARNING: * Debugger is active!
+2021-07-26 16:55:25,899:INFO: * Debugger PIN: 878-783-307
+2021-07-26 16:55:37,361:INFO:Vista --> /prueba
+2021-07-26 16:55:39,621:INFO:existe el cliente 12269
+2021-07-26 16:55:40,802:INFO:se creo la receta con el siguiente id 2450
+2021-07-26 16:55:40,805:INFO:127.0.0.1 - - [26/Jul/2021 16:55:40] "GET /prueba HTTP/1.1" 200 -
+2021-07-26 16:56:05,380:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/api.py', reloading
+2021-07-26 16:56:05,452:INFO: * Restarting with stat
+2021-07-26 16:56:05,964:WARNING: * Debugger is active!
+2021-07-26 16:56:05,967:INFO: * Debugger PIN: 878-783-307
+2021-07-26 16:56:08,547:INFO:Vista --> /prueba
+2021-07-26 16:56:10,847:INFO:existe el cliente 12269
+2021-07-26 16:56:12,970:INFO:se creo la receta con el siguiente id 2451
+2021-07-26 16:56:12,974:INFO:127.0.0.1 - - [26/Jul/2021 16:56:12] "GET /prueba HTTP/1.1" 200 -
+2021-07-26 16:56:47,383:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/api.py', reloading
+2021-07-26 16:56:47,477:INFO: * Restarting with stat
+2021-07-26 16:56:48,001:WARNING: * Debugger is active!
+2021-07-26 16:56:48,004:INFO: * Debugger PIN: 878-783-307
+2021-07-26 16:59:55,675:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/api.py', reloading
+2021-07-26 16:59:55,747:INFO: * Restarting with stat
+2021-07-26 17:26:32,953:INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-07-26 17:26:32,957:INFO: * Restarting with stat
+2021-07-26 17:26:33,463:WARNING: * Debugger is active!
+2021-07-26 17:26:33,465:INFO: * Debugger PIN: 878-783-307
+2021-07-26 17:26:37,640:INFO:Vista --> /prueba
+2021-07-26 17:26:40,007:INFO:existe el cliente 12269
+2021-07-26 17:26:41,198:INFO:se creo la receta con el siguiente id 2452
+2021-07-26 17:26:41,219:INFO:127.0.0.1 - - [26/Jul/2021 17:26:41] "[35m[1mGET /prueba HTTP/1.1[0m" 500 -
+2021-07-26 17:27:10,874:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/api.py', reloading
+2021-07-26 17:27:10,946:INFO: * Restarting with stat
+2021-07-26 17:27:11,467:WARNING: * Debugger is active!
+2021-07-26 17:27:11,469:INFO: * Debugger PIN: 878-783-307
+2021-07-26 17:27:16,158:INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-07-26 17:27:16,163:INFO: * Restarting with stat
+2021-07-26 17:27:16,671:WARNING: * Debugger is active!
+2021-07-26 17:27:16,674:INFO: * Debugger PIN: 878-783-307
+2021-07-26 17:27:18,721:INFO:Vista --> /prueba
+2021-07-26 17:27:22,011:INFO:existe el cliente 12269
+2021-07-26 17:27:23,214:INFO:se creo la receta con el siguiente id 2453
+2021-07-26 17:27:23,233:INFO:127.0.0.1 - - [26/Jul/2021 17:27:23] "[35m[1mGET /prueba HTTP/1.1[0m" 500 -
+2021-07-26 17:27:40,965:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/api.py', reloading
+2021-07-26 17:27:41,076:INFO: * Restarting with stat
+2021-07-26 17:27:41,656:WARNING: * Debugger is active!
+2021-07-26 17:27:41,658:INFO: * Debugger PIN: 878-783-307
+2021-07-26 17:27:46,058:INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-07-26 17:27:46,064:INFO: * Restarting with stat
+2021-07-26 17:27:46,586:WARNING: * Debugger is active!
+2021-07-26 17:27:46,588:INFO: * Debugger PIN: 878-783-307
+2021-07-26 17:27:49,585:INFO:Vista --> /prueba
+2021-07-26 17:27:52,853:INFO:existe el cliente 12269
+2021-07-26 17:27:58,049:INFO:se creo la receta con el siguiente id 2454
+2021-07-26 17:28:07,350:INFO:127.0.0.1 - - [26/Jul/2021 17:28:07] "GET /prueba HTTP/1.1" 200 -
+2021-07-26 17:29:09,375:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/api.py', reloading
+2021-07-26 17:29:09,480:INFO: * Restarting with stat
+2021-07-26 17:29:10,087:WARNING: * Debugger is active!
+2021-07-26 17:29:10,090:INFO: * Debugger PIN: 878-783-307
+2021-07-26 17:29:21,248:INFO:Vista --> /prueba
+2021-07-26 17:29:23,485:INFO:existe el cliente 12269
+2021-07-26 17:29:24,618:INFO:se creo la receta con el siguiente id 2455
+2021-07-26 17:29:26,924:INFO:127.0.0.1 - - [26/Jul/2021 17:29:26] "GET /prueba HTTP/1.1" 200 -
+2021-07-26 17:32:13,756:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/api.py', reloading
+2021-07-26 17:32:13,912:INFO: * Restarting with stat
+2021-07-26 17:32:14,523:WARNING: * Debugger is active!
+2021-07-26 17:32:14,526:INFO: * Debugger PIN: 878-783-307
+2021-07-26 17:32:25,642:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/api.py', reloading
+2021-07-26 17:32:25,711:INFO: * Restarting with stat
+2021-07-26 17:32:26,193:WARNING: * Debugger is active!
+2021-07-26 17:32:26,197:INFO: * Debugger PIN: 878-783-307
+2021-07-26 17:32:31,738:INFO:Vista --> /prueba
+2021-07-26 17:32:33,980:INFO:existe el cliente 12269
+2021-07-26 17:32:35,132:INFO:se creo la receta con el siguiente id 2456
+2021-07-26 17:32:36,321:INFO:PAENTRO EL PRODUCTO CON ID 20325  EXISTE
+2021-07-26 17:32:37,498:INFO:PAJUERA EL PRODUCTO CON ID bb NO EXISTE
+2021-07-26 17:32:37,501:INFO:127.0.0.1 - - [26/Jul/2021 17:32:37] "GET /prueba HTTP/1.1" 200 -
+2021-07-26 17:33:16,702:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/api.py', reloading
+2021-07-26 17:33:16,773:INFO: * Restarting with stat
+2021-07-26 17:33:17,268:WARNING: * Debugger is active!
+2021-07-26 17:33:17,270:INFO: * Debugger PIN: 878-783-307
+2021-07-26 17:33:21,316:INFO:Vista --> /prueba
+2021-07-26 17:33:23,631:INFO:existe el cliente 12269
+2021-07-26 17:33:24,802:INFO:se creo la receta con el siguiente id 2457
+2021-07-26 17:33:26,020:INFO:PAENTRO EL PRODUCTO CON ID 20325  EXISTE
+2021-07-26 17:33:27,119:INFO:PAJUERA EL PRODUCTO CON ID bb NO EXISTE
+2021-07-26 17:33:27,122:INFO:127.0.0.1 - - [26/Jul/2021 17:33:27] "GET /prueba HTTP/1.1" 200 -
+2021-07-26 18:00:16,969:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/api.py', reloading
+2021-07-26 18:00:17,060:INFO: * Restarting with stat
+2021-07-26 18:00:17,603:WARNING: * Debugger is active!
+2021-07-26 18:00:17,605:INFO: * Debugger PIN: 878-783-307
