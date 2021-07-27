@@ -835,3 +835,53 @@
 2021-07-26 18:00:17,060:INFO: * Restarting with stat
 2021-07-26 18:00:17,603:WARNING: * Debugger is active!
 2021-07-26 18:00:17,605:INFO: * Debugger PIN: 878-783-307
+2021-07-27 10:05:04,176:INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-07-27 10:05:04,184:INFO: * Restarting with stat
+2021-07-27 10:05:04,718:WARNING: * Debugger is active!
+2021-07-27 10:05:04,844:INFO: * Debugger PIN: 105-829-922
+2021-07-27 10:05:56,420:INFO:Vista --> /prueba
+2021-07-27 10:05:58,755:INFO:existe el cliente 12269
+2021-07-27 10:05:59,908:INFO:se creo la receta con el siguiente id 2458
+2021-07-27 10:06:01,094:INFO: EL PRODUCTO CON ID 20325  EXISTE
+2021-07-27 10:06:01,098:INFO:la lista de productos es [{'producto_codigo': '20325', 'producto': ' ', 'receta_solicitado': '', 'receta_prolongado': ''}, {'producto_codigo': 'bb', 'producto': ' ', 'receta_solicitado': '', 'receta_prolongado': ''}]
+2021-07-27 10:06:02,214:INFO: EL PRODUCTO CON ID bb NO EXISTE
+2021-07-27 10:06:02,218:INFO:127.0.0.1 - - [27/Jul/2021 10:06:02] "GET /prueba HTTP/1.1" 200 -
+2021-07-27 10:07:18,457:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/api.py', reloading
+2021-07-27 10:07:18,549:INFO: * Restarting with stat
+2021-07-27 10:07:19,090:WARNING: * Debugger is active!
+2021-07-27 10:07:19,094:INFO: * Debugger PIN: 105-829-922
+2021-07-27 10:07:21,818:INFO:Vista --> /prueba
+2021-07-27 10:07:24,093:INFO:existe el cliente 12269
+2021-07-27 10:07:25,285:INFO:se creo la receta con el siguiente id 2459
+2021-07-27 10:07:26,454:INFO: EL PRODUCTO CON ID 20325  EXISTE
+2021-07-27 10:07:26,460:INFO:la lista de productos es {'producto_codigo': '20325', 'producto': ' ', 'receta_solicitado': '', 'receta_prolongado': ''}
+2021-07-27 10:07:27,599:INFO: EL PRODUCTO CON ID bb NO EXISTE
+2021-07-27 10:07:27,606:INFO:127.0.0.1 - - [27/Jul/2021 10:07:27] "GET /prueba HTTP/1.1" 200 -
+2021-07-27 13:39:48,618:INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-07-27 13:39:48,623:INFO: * Restarting with stat
+2021-07-27 13:39:49,157:WARNING: * Debugger is active!
+2021-07-27 13:39:49,160:INFO: * Debugger PIN: 105-829-922
+2021-07-27 13:39:52,731:INFO:vista ---> /test
+2021-07-27 13:39:53,918:INFO:se encontro a partir de Sale order list [{'id': 7167, 'name': 'SO7209', 'company_id': [1, 'Fracción SpA'], 'partner_id': [12241, 'Don Amar']}]
+2021-07-27 13:39:55,177:INFO:se encontro a partir de sale order line [{'id': 17060, 'product_id': [6572, '[1201] Artesol 50mg x 30 comprimidos'], 'product_uom_qty': 12.0, 'other_discounts': 0.0, 'partner_liquidator_id': False, 'price_reduce': 1000.0, 'price_reduce_taxexcl': 840.34, 'price_reduce_taxinc': 1000.0, 'price_subtotal': 10084.03, 'price_tax': 1915.968, 'price_total': 12000.0, 'price_unit': 1000.0, 'display_name': 'SO7209 - [1201] Artesol 50mg x 30 comprimidos'}, {'id': 17063, 'product_id': [15313, '[00001] VC-Producto 1'], 'product_uom_qty': 2.0, 'other_discounts': 0.0, 'partner_liquidator_id': False, 'price_reduce': 2990.0, 'price_reduce_taxexcl': 2990.0, 'price_reduce_taxinc': 2990.0, 'price_subtotal': 5980.0, 'price_tax': 0.0, 'price_total': 5980.0, 'price_unit': 2990.0, 'display_name': 'SO7209 - [00001] VC-Producto 1'}, {'id': 17064, 'product_id': [15314, '[00002] VC-Producto 2'], 'product_uom_qty': 1.0, 'other_discounts': 0.0, 'partner_liquidator_id': False, 'price_reduce': 2990.0, 'price_reduce_taxexcl': 2990.0, 'price_reduce_taxinc': 2990.0, 'price_subtotal': 2990.0, 'price_tax': 0.0, 'price_total': 2990.0, 'price_unit': 2990.0, 'display_name': 'SO7209 - [00002] VC-Producto 2'}, {'id': 17065, 'product_id': [15316, '[00005] VC-Producto 5'], 'product_uom_qty': 3.0, 'other_discounts': 0.0, 'partner_liquidator_id': False, 'price_reduce': 2.0, 'price_reduce_taxexcl': 1.68, 'price_reduce_taxinc': 2.0, 'price_subtotal': 5.04, 'price_tax': 0.957984, 'price_total': 6.0, 'price_unit': 2.0, 'display_name': 'SO7209 - [00005] VC-Producto 5'}]
+2021-07-27 13:39:55,205:INFO:127.0.0.1 - - [27/Jul/2021 13:39:55] "[35m[1mGET /test HTTP/1.1[0m" 500 -
+2021-07-27 13:40:40,689:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/api.py', reloading
+2021-07-27 13:40:40,805:INFO: * Restarting with stat
+2021-07-27 13:40:41,454:WARNING: * Debugger is active!
+2021-07-27 13:40:41,459:INFO: * Debugger PIN: 105-829-922
+2021-07-27 13:40:44,163:INFO:vista ---> /test
+2021-07-27 13:40:46,378:INFO:se encontro a partir de Sale order list [{'id': 7167, 'name': 'SO7209', 'company_id': [1, 'Fracción SpA'], 'partner_id': [12241, 'Don Amar']}]
+2021-07-27 13:40:47,580:INFO:se encontro a partir de sale order line [{'id': 17060, 'product_id': [6572, '[1201] Artesol 50mg x 30 comprimidos'], 'product_uom_qty': 12.0, 'other_discounts': 0.0, 'partner_liquidator_id': False, 'price_reduce': 1000.0, 'price_reduce_taxexcl': 840.34, 'price_reduce_taxinc': 1000.0, 'price_subtotal': 10084.03, 'price_tax': 1915.968, 'price_total': 12000.0, 'price_unit': 1000.0, 'display_name': 'SO7209 - [1201] Artesol 50mg x 30 comprimidos'}, {'id': 17063, 'product_id': [15313, '[00001] VC-Producto 1'], 'product_uom_qty': 2.0, 'other_discounts': 0.0, 'partner_liquidator_id': False, 'price_reduce': 2990.0, 'price_reduce_taxexcl': 2990.0, 'price_reduce_taxinc': 2990.0, 'price_subtotal': 5980.0, 'price_tax': 0.0, 'price_total': 5980.0, 'price_unit': 2990.0, 'display_name': 'SO7209 - [00001] VC-Producto 1'}, {'id': 17064, 'product_id': [15314, '[00002] VC-Producto 2'], 'product_uom_qty': 1.0, 'other_discounts': 0.0, 'partner_liquidator_id': False, 'price_reduce': 2990.0, 'price_reduce_taxexcl': 2990.0, 'price_reduce_taxinc': 2990.0, 'price_subtotal': 2990.0, 'price_tax': 0.0, 'price_total': 2990.0, 'price_unit': 2990.0, 'display_name': 'SO7209 - [00002] VC-Producto 2'}, {'id': 17065, 'product_id': [15316, '[00005] VC-Producto 5'], 'product_uom_qty': 3.0, 'other_discounts': 0.0, 'partner_liquidator_id': False, 'price_reduce': 2.0, 'price_reduce_taxexcl': 1.68, 'price_reduce_taxinc': 2.0, 'price_subtotal': 5.04, 'price_tax': 0.957984, 'price_total': 6.0, 'price_unit': 2.0, 'display_name': 'SO7209 - [00005] VC-Producto 5'}]
+2021-07-27 13:40:47,586:INFO:127.0.0.1 - - [27/Jul/2021 13:40:47] "GET /test HTTP/1.1" 200 -
+2021-07-27 15:05:07,054:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/api.py', reloading
+2021-07-27 15:05:07,124:INFO: * Restarting with stat
+2021-07-27 15:05:07,779:WARNING: * Debugger is active!
+2021-07-27 15:05:07,784:INFO: * Debugger PIN: 105-829-922
+2021-07-27 15:05:16,762:INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-07-27 15:05:16,767:INFO: * Restarting with stat
+2021-07-27 15:05:17,306:WARNING: * Debugger is active!
+2021-07-27 15:05:17,308:INFO: * Debugger PIN: 105-829-922
+2021-07-27 15:05:32,981:INFO:Vista = /partner/get
+2021-07-27 15:05:32,981:INFO:Se obtuvo {'cliente': {'rut': '212121-9'}}
+2021-07-27 15:05:34,088:ERROR:el siguiente rut no existe 212121-9
+2021-07-27 15:05:34,090:INFO:127.0.0.1 - - [27/Jul/2021 15:05:34] "GET /partner/get HTTP/1.1" 200 -
