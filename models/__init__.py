@@ -8,3 +8,4 @@ from .team import resources as rs_team
 from .product_categoria import resources as rs_product_categ
 from .uom import resources as rs_uom
 from .product_template import resource as rs_product_template
+from .dte_order import resources as rs_dte_order

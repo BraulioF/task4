@@ -267,8 +267,8 @@ def srmc_authorize():
     logging.info(" vista : /sermecoop/authorize")
     data = request.get_json()
     value= data["sale_id"]
-
-    result = rs_sale.SaleOrderList.get_id(value)
+    iddd = data["id"]
+    result = rs_sale.SaleOrderList.get_id(iddd)
     logging.info(f'se encontro a partir de Sale order list {result}')
     id = result[0]["partner_id"][0]
 
@@ -360,7 +360,17 @@ def srmc_authorize():
         return (response4.json())
         
 
-
+##GET DTE
+@app.route("/adnet/dte/bo/op", methods=["GET"])
+def get_adnet():
+    logging.info(" vista : /adnet/dte/bo/op")
+    data = request.get_json()
+    id = data["sale_id"]
+    checkorder = rs_dte_order.DteOrderList.get_dteorder(id)
+    logging.info(f' es ---> {checkorder}')
+    if(len(checkorder) == 0):
+        return jsonify({"Error" : "No existe ese con ese canal"})
+    return jsonify({"canal encontrado ": checkorder})
 
 if __name__ == "__main__":
     app.run(host="127.0.0.1", port=5000, debug=True)
