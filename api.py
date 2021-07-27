@@ -140,79 +140,7 @@ def sale_create():
             logging.info(f'line agregada a la orden') 
             
             return jsonify({"creado":order_line})
-#__________________________________________________________________________________________________________________________
-##GET PRODUCT
-@app.route("/prueba", methods=["GET"])
-def get_it_receta():
-    logging.info("Vista --> /prueba")
-    data = request.get_json()
-    recipe = data["recipe"]
-    if(recipe["receta"]):        
-        id = recipe["id"]
-        receta = rs_recipe.RecipeList.get_id(id)
-        if(len(receta) == 0):
 
-            cliente = data["client"] 
-            rut = cliente["cliente_rut"]
-            partner = rs_partner.ResPartnerList.get_rut(rut)
-            if (partner == []):
-                logging.info(f'No existe el cliente por lo que se creo uno nuevo')           
-                partner_id = rs_partner.ResPartnerCreate.post_client(cliente)
-                print(f'creamos a {partner_id}')
-            else:                
-                partner_id = partner[0]['id']
-                logging.info(f'existe el cliente {partner_id}')
-            
-            recipecreado = rs_recipe.RecipeCreate.post(partner_id)
-            print(f'se creo la receta con ===> {recipecreado}')
-            logging.info(f'se creo la receta con el siguiente id {recipecreado}')
-
-            #verificar las lineas del producto (si existe o no el producto)
-            lines = recipe['lines']
-            
-            for n in range(len(lines)):
-                defcode = lines[n]["producto_codigo"]
-                print(f'{len(defcode)}')
-            #print(f'los defcode son --> {defcode[n]["producto_codigo"]}')
-                product = rs_product_template.ProductList.get_default_code(defcode)
-                if(len(product) == 0):
-                   logging.info(f'PAJUERA EL PRODUCTO CON ID {defcode} NO EXISTE')
-                   return jsonify({"Horror": f' EL PRODUCTO CON SKU {defcode} NO EXISTE'})
-                else:    
-                    logging.info(f'PAENTRO EL PRODUCTO CON ID {defcode}  EXISTE')
-                    ##
-                    
-            #if(len(product)== 0):
-            #    logging.error(f'No existe el producto') 
-            #    return"No existe ese Producto"
-
-            return jsonify({"Error" : "No existe una receta con esa id"})
-            
-        lines = []
-        for i in range(len(receta[0]["recipe_line_id"])):
-            data["default_code"] = receta[0]["recipe_line_id"][i]
-            print(data["default_code"])
-            #prod = rs_product_template.ProductList.get_default_code(data)
-            prod = rs_recipe_line.RecipeLinesList.get_lines_id(receta[0]["recipe_line_id"][i])
-            lines.append(prod)
-        
-        receta[0]["lines"] = lines
-        logging.info(f'producto encontrado {receta}')
-        return jsonify({"producto encontrado ": receta})
-
-##GET PRODUCT
-@app.route("/product/get", methods=["GET"])
-def get_prod():
-    logging.info("Vista --> /product/get")
-    data = request.get_json()
-    product = data["get_producto"]
-    defcode = product["default_code"]
-    checkprod = rs_product_template.ProductList.get_default_code(defcode)
-    if(len(checkprod) == 0):
-        logging.error("Error : no existe un producto con ese defaultcode")
-        return jsonify({"Error" : "No existe un producto con ese defaultcode"})
-    logging.info(f'producto encontrado {checkprod}')
-    return jsonify({"producto encontrado ": checkprod})
 
 ## CREATE PRODUCT
 @app.route("/product/create", methods=["POST"])

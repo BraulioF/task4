@@ -48,7 +48,8 @@ class ResPartnerCreate():
             'rut' : data["rut"],
             'comment' : data["comment"],
             'phone' : data["phone"],
-            'email' : data["email"]
+            'email' : data["email"],
+            'is_company' : data["is_company"]
             }])
         #name = models.execute_kw(odoo_client.db, uid, odoo_client.password, 'res.partner', 'name_get', [[partnerid]])
         return partnerid
@@ -105,3 +106,12 @@ class ResPartnerDelete():
         check = models.execute_kw(odoo_client.db, uid, odoo_client.password,
             'res.partner', 'search', [[['id', '=', id]]])
         return check
+
+
+
+
+
+    
+
+  
+       
