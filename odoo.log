@@ -1,0 +1,11 @@
+2021-07-28 16:59:42,227:INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-07-28 16:59:42,230:INFO: * Restarting with stat
+2021-07-28 16:59:42,986:WARNING: * Debugger is active!
+2021-07-28 16:59:42,990:INFO: * Debugger PIN: 317-036-462
+2021-07-28 16:59:47,561:INFO: vista : /adnet/dte/bo/op
+2021-07-28 16:59:48,096:INFO: es ---> [{'id': 7, 'name': 'DTE/BO/1', 'partner_id': [10, 'Braulio Fernandez'], 'partner_vat': '8183668-K', 'partner_business_name': False, 'dte_type': '(39) Boleta Electronica', 'account_move_id': False, 'invoice_payment_term_id': False, 'folio': '3130', 'folio_suggested': False, 'confirmation_date': False, 'url_document': False, 'company_id': [1, 'My Company'], 'company_vat': False, 'user_id': False, 'amount_untaxed': 3.0, 'amount_tax': 2.0, 'discount_global': 9.0, 'amount_total': 2000.0, 'dte_line_id': [2], 'amount_total_cardinal': '2000', 'origin': False, 'state': 'draft', 'is_fiscal': False, 'payment_acquirer_name': False, 'date_issued': False, 'date_cancel': False, 'confirmation_date_sale': False, 'display_name': 'DTE/BO/1', 'create_uid': [6, 'Braulio Fernandez'], 'create_date': '2021-07-28 19:14:49', 'write_uid': [6, 'Braulio Fernandez'], 'write_date': '2021-07-28 19:14:49', '__last_update': '2021-07-28 19:14:49'}]
+2021-07-28 16:59:48,100:INFO:127.0.0.1 - - [28/Jul/2021 16:59:48] "GET /adnet/dte/bo/op HTTP/1.1" 200 -
+2021-07-28 17:05:29,445:INFO: * Detected change in '/home/braulio/Documentos/tarea/task4/api.py', reloading
+2021-07-28 17:05:29,512:INFO: * Restarting with stat
+2021-07-28 17:05:30,052:WARNING: * Debugger is active!
+2021-07-28 17:05:30,054:INFO: * Debugger PIN: 317-036-462
