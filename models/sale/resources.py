@@ -37,12 +37,12 @@ class SaleOrderList():
             { 'fields': ['name'],'limit': 1})
         return team_details 
 
-    def get_id (data):
+    def get_id (id):
         """get list order for id """
         
         odoo_client = odoo.OdooClient()
         uid, models = odoo_client.logging()
-        id = data["id"]
+        
         team_details = models.execute_kw(odoo_client.db, uid, odoo_client.password,
                             'sale.order', 'search_read',
                             

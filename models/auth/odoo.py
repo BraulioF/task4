@@ -3,10 +3,11 @@
 import xmlrpc.client
 
 
-url = 'http://52.142.63.20:1269'
-db = 'fraccion_test'
-username = 'WSadnet@adnetworks.cl'
-password = 'WSadnet@adnetworks.cl'
+
+url = 'http://adnetworks.cl:1469'
+db = 'adnetdev'
+username = 'bfernandez@adnetworks.cl'
+password = 'spO%4N6Ba2Op$wC#tLBJYP'
 
 class OdooClient():
     """ class connect odoo client"""

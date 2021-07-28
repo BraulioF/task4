@@ -365,12 +365,70 @@ def srmc_authorize():
 def get_adnet():
     logging.info(" vista : /adnet/dte/bo/op")
     data = request.get_json()
-    id = data["sale_id"]
+    id = data["id"]
     checkorder = rs_dte_order.DteOrderList.get_dteorder(id)
     logging.info(f' es ---> {checkorder}')
     if(len(checkorder) == 0):
-        return jsonify({"Error" : "No existe ese con ese canal"})
-    return jsonify({"canal encontrado ": checkorder})
+        return jsonify({"Error" : "No existe ese order"})
+    return jsonify({"dte encontrado ": checkorder})
+
+##creaye DTE
+@app.route("/adnet/dte/bo/op/post", methods=["POST"])
+def post_adnet():
+    logging.info(" vista : /adnet/dte/bo/op/post")
+    data = request.get_json()
+    checkorder = rs_dte_order.DteOrderCreate.post()
+    logging.info(f' creamos a ---> {checkorder}')
+    return jsonify({"dte creado ": checkorder})
+
+
+##delete DTE
+@app.route("/adnet/dte/bo/op/drop", methods=["DELETE"])
+def drop_adnet():
+    logging.info(" vista : /adnet/dte/bo/op/drop")
+    data = request.get_json()
+    id = data["id"]
+    checkorder = rs_dte_order.DteOrderDelete.delete(id)
+    logging.info(f' eliminamos a ---> {checkorder}')
+    return jsonify({"Eliminado ": checkorder})
+
+##GET DTE Line
+@app.route("/adnet/dteline/bo/op", methods=["GET"])
+def get_adnetline():
+    logging.info(" vista : /adnet/dteline/bo/op")
+    data = request.get_json()
+    id = data["id"]
+    checkorder = rs_dte_order_line.DteOrderLineList.get_dteorder(id)
+    logging.info(f' es ---> {checkorder}')
+    if(len(checkorder) == 0):
+        return jsonify({"Error" : "No existe ese order"})
+    return jsonify({"Line encontrado : ": checkorder})
+
+##POST DTE Line
+@app.route("/adnet/dteline/bo/op", methods=["POST"])
+def post_adnetline():
+    logging.info(" vista : /adnet/dteline/bo/op")
+    data = request.get_json()
+    #id = data["id"]
+    checkorder = rs_dte_order_line.DteOrderLineCreate.post()
+    logging.info(f' es ---> {checkorder}')
+    #if(len(checkorder) == 0):
+    #    return jsonify({"Error" : "No existe ese order"})
+    return jsonify({"DTE Line Creado con ID ": checkorder})
+
+
+##Drop DTE Line
+@app.route("/adnet/dteline/bo/op", methods=["DELETE"])
+def drop_adnetline():
+    logging.info(" vista : /adnet/dteline/bo/op")
+    data = request.get_json()
+    id = data["id"]
+    checkorder = rs_dte_order_line.DteOrderLineDelete.delete(id)
+    logging.info(f' es ---> {checkorder}')
+    #if(len(checkorder) == 0):
+    #    return jsonify({"Error" : "No existe ese order"})
+    return jsonify({"dte line eliminado ": checkorder})
+
 
 if __name__ == "__main__":
     app.run(host="127.0.0.1", port=5000, debug=True)
