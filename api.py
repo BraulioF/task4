@@ -372,8 +372,8 @@ def get_adnet():
         return jsonify({"Error" : "No existe ese order"})
     return jsonify({"dte encontrado ": checkorder})
 
-##creaye DTE
-@app.route("/adnet/dte/bo/op/post", methods=["POST"])
+##create DTE
+@app.route("/adnet/dte/bo/op", methods=["POST"])
 def post_adnet():
     logging.info(" vista : /adnet/dte/bo/op/post")
     data = request.get_json()
@@ -383,7 +383,7 @@ def post_adnet():
 
 
 ##delete DTE
-@app.route("/adnet/dte/bo/op/drop", methods=["DELETE"])
+@app.route("/adnet/dte/bo/op", methods=["DELETE"])
 def drop_adnet():
     logging.info(" vista : /adnet/dte/bo/op/drop")
     data = request.get_json()
